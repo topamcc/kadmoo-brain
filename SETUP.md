@@ -3,6 +3,19 @@
 המוח (Obsidian Vault) מוכן בתיקייה `C:\Users\6leon\Desktop\kadmoo-brain`.
 הקוד באפליקציה ובסוכן כבר מוכן לקבל אותו. מה שנותר הוא חיבור GitHub + סודות.
 
+## 0. Cursor workspace (מומלץ)
+
+פתח את הקובץ:
+
+`C:\Users\6leon\Desktop\Kadmoo.code-workspace`
+
+הוא כולל שלושה שורשים:
+- `Kadmoo App 2026` (האפליקציה)
+- `kadmoo-agent-rag` (הסוכן)
+- `kadmoo-brain` (Obsidian Second Brain)
+
+כך Cursor (וגם אני) יכולים לקרוא ולערוך את המוח באותה סשן.
+
 ## 1. התקן Obsidian
 
 1. הורד מ־https://obsidian.md והתקן.
