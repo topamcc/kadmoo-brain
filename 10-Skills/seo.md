@@ -1,4 +1,4 @@
-﻿---
+---
 kadmoo_type: skill
 status: approved
 slug: seo
