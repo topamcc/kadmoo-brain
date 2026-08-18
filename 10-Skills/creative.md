@@ -5,35 +5,47 @@ slug: creative
 domain: creative
 department: creative
 name: קריאייטיב (Creative OS)
-description: משרד פרסום אוטונומי — Client DNA, Strategy Stack, קונספט, ארט, הפקה, QA ולמידה.
-when_to_use: כשהלקוח מבקש מודעה, קריאייטיב, תמונה לקמפיין, או הפקת פרסום.
+description: משרד פרסום אוטונומי — Client DNA, Strategy Stack, קונספט, ארט, הפקה, QA, טיוטה ולמידה.
+when_to_use: מודעה, קריאייטיב, באנר, ויזואל, וריאציה או קמפיין ממומן.
 tool_hints:
   - check_client_dna
   - scan_and_fill_site_data
   - resolve_offer_assets
+  - search_site_products
+  - fetch_offer_page
+  - browse_site_offers
+  - add_catalog_item
+  - save_brand_asset
   - upsert_creative_request
+  - get_creative_request
+  - find_creative_principles
   - generate_ad_image
+  - generate_video
+  - preview_ad_creative
+  - list_studio_assets
+  - list_ad_drafts
+  - launch_ad_draft
   - record_creative_feedback
   - create_campaign_draft
   - activate_campaign
   - get_creative_performance
+  - list_brand_assets
+  - list_site_catalog
+  - get_connect_links
+  - create_ticket
 ---
 
 # Creative OS
 
 מחלקה: [[03-creative]] · Pipeline: [[pipeline-stages]] · היררכיה: [[agency-hierarchy]]
 
-אתה מנהל/ת הלקוחות של סוכנות פרסום אוטונומית. הלקוח רואה רק אותך.
-
 ## שלבים
-0. Client DNA — check_client_dna, אל תמציא מותג
-1. טריגר + מוצר — resolve_offer_assets
+0. Client DNA — check_client_dna; אל תמציא מותג
+1. מוצר — resolve_offer_assets / browse_site_offers
 2. Strategy Stack + Message Map ב-upsert_creative_request
-3. Concept board — טריטוריות + קונספט נבחר
-4. Visual & Typographic Direction
-5. הפקה — generate_ad_image
-6. הצגה ממוסגרת (לא "מה דעתך?")
-7. פרסום — create_campaign_draft → activate אחרי אישור
-8. למידה — why_it_worked
+3. קופי קודם → generate_ad_image (אסינכרוני)
+4. תצוגה ממוסגרת (לא "מה דעתך?")
+5. create_campaign_draft → activate רק באישור שני
+6. למידה — record_creative_feedback / get_creative_performance
 
-גבולות: שני אישורים לפני הוצאת כסף. אל תחשוף מסמכים פנימיים. מודעה אחת = עבודה אחת.
+גבולות: שני אישורים לפני כסף. אל תחשוף מסמכים פנימיים. מודעה אחת = עבודה אחת.

@@ -6,7 +6,7 @@ domain: growth
 department: strategy-analytics
 name: אסטרטגיית צמיחה (יועץ)
 description: חוות דעת מקצועית ותוכנית פעולה מתועדפת על בסיס כל הערוצים.
-when_to_use: כשהלקוח שואל "מה הכי כדאי לי לשפר", "תן לי תוכנית פעולה / חוות דעת", "במה להתמקד", או רוצה מבט-על אסטרטגי חוצה-ערוצים.
+when_to_use: "מה הכי כדאי לשפר", תוכנית פעולה, חוות דעת, מבט-על חוצה-ערוצים.
 tool_hints:
   - growth_advisor
   - get_analytics_insights
@@ -15,14 +15,16 @@ tool_hints:
   - get_meta_ads_summary
   - get_site_budget_summary
   - get_crm_leads_summary
+  - analyze_uploaded_file
+  - list_user_sites
+  - get_user_integrations_summary
 ---
 
 # אסטרטגיית צמיחה
 
 מחלקה: [[02-strategy-analytics]] · Stack: [[strategy-stack]] · היררכיה: [[agency-hierarchy]]
 
-- growth_advisor הוא הכלי המרכזי: אוסף אנליטיקה + Search Console + דירוגים + Ads + תקציב + לידים ומחזיר תוכנית מתועדפת
-- הצג headline ועדיפויות בבירור; הוסף משפט-שניים של פרשנות אנושית
-- אם missing_sources — ציין בעדינות אילו ערוצים חסרים
-- לכל המלצה שמתחברת לפעולה — הצע ביצוע דרך הכלי המתאים (תמיד באישור)
-- המלצות תקציב ממומן → אישור כפול דרך [[04-paid-media]]
+- growth_advisor מרכזי — תוכנית מתועדפת + מדדים
+- פרשנות אנושית קצרה; ציין missing_sources בעדינות
+- המלצות תקציב → אישור כפול דרך [[04-paid-media]]
+- רשימת אתרים / חיבורים: list_user_sites, get_user_integrations_summary
