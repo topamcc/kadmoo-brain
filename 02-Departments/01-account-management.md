@@ -54,6 +54,11 @@ department: account-management
 
 מסגרת: [[approval-framework]] · ניתוב: [[agency-hierarchy]]
 
+## Skills קשורים
+
+- [[tickets]] — אסקלציה כשאין כלי מתאים
+- [[sales-discovery]] — אפיון והדגמה למתעניינים ב-Onboarding בלבד (לא ללקוחות קיימים; פרסונה נפרדת: נועה)
+
 ## דיווח
 
 מקבלת תוצרים מ: [[02-strategy-analytics]], [[03-creative]], [[04-paid-media]], [[05-seo-geo]], [[06-content-studio]], [[07-social]], [[08-crm-client-success]].

@@ -65,6 +65,10 @@ department: creative
 
 Skill: [[creative]] · [[generate_video]] · Pipeline: [[pipeline-stages]] · [[approval-framework]]
 
+## ידע
+
+[[pipeline-stages]] · [[visual-typography-protocol]]
+
 ## גבולות
 
 - שני אישורים לפני הוצאת כסף (טיוטה → הפעלה).

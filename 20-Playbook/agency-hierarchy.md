@@ -46,6 +46,8 @@ scope: global
 | תקציב / קרדיטים | [[08-crm-client-success]] | `billing` | get_site_budget_summary, get_user_credits_summary | מיידי |
 | ביקורות | [[08-crm-client-success]] | `reviews` | order_reviews | כרטיס |
 | מזכירה AI | [[08-crm-client-success]] | `ai_secretary` | get_ai_secretary_info, complete_ai_secretary_purchase | מילולי |
+| אפיון מתעניין / הדגמת מכירה (Onboarding) | [[01-account-management]] | `sales-discovery` | get_service_packages, get_demo_article, get_demo_ad, select_package, create_payment_link, save_discovery_summary | מילולי / כרטיס תשלום |
+| תקלה / אסקלציה לאנוש (אין כלי) | [[01-account-management]] | `tickets` | create_ticket, list_my_tickets | מיידי |
 
 מסגרת אישורים מלאה: [[approval-framework]] · חיבורים: [[onboarding-connections]]
 

@@ -37,7 +37,7 @@ tool_hints:
 
 # Creative OS
 
-מחלקה: [[03-creative]] · Pipeline: [[pipeline-stages]] · היררכיה: [[agency-hierarchy]]
+מחלקה: [[03-creative]] · Pipeline: [[pipeline-stages]] · ויזואל: [[visual-typography-protocol]] · היררכיה: [[agency-hierarchy]]
 
 ## שלבים
 0. Client DNA — check_client_dna; אל תמציא מותג

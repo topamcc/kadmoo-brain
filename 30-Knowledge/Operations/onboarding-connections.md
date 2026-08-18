@@ -37,3 +37,5 @@ scope: global
 - אל תגיד "לך ללוח הבקרה" בלי כרטיס `get_connect_links`.
 - אחרי חיבור מוצלח — המשך במשימה המקורית (קמפיין / מאמר / אודיט).
 - פלאגין WP: `check_site_plugin_status` → אם לא מותקן שלח קישור הורדה ב-connect_links → אחרי התקנה `verify_site_connection`.
+
+מחלקה: [[05-seo-geo]] · Skill: [[seo-setup]]

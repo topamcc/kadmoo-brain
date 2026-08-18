@@ -47,3 +47,5 @@ scope: global
 | **20%** | פרטים ו־CTA — כפתור, מחיר, דיסקליימר |
 
 חוקי ברזל: קריאות לפני קישוט · מעט פונטים · התאמה לפלטפורמה/מובייל · שמירת Visual + Typography DNA לסדרות.
+
+מחלקה: [[03-creative]] · Pipeline: [[pipeline-stages]]

@@ -40,9 +40,10 @@ department: seo-geo
 ## Skills קשורים
 
 - [[seo]] — דירוגים ו-Search Console
+- [[keywords]] — מחקר והוספת ביטויים
+- [[audit]] — אודיט טכני + GEO
+- [[seo-setup]] — אתר חדש, חיבורים, פלאגין
 - [[backlinks]] — קישורים נכנסים
-- ביטויים: skill `keywords` (כלי `list_site_keywords`, `suggest_keywords`, `add_keywords`)
-- אודיט: skill `audit` (`get_audit_summary`)
 
 ## שיתוף פעולה
 
