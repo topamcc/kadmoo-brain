@@ -5,8 +5,8 @@
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 5,
   "autoPushInterval": 5,
-  "autoPullInterval": 0,
-  "autoPullOnBoot": false,
+  "autoPullInterval": 10,
+  "autoPullOnBoot": true,
   "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
@@ -63,6 +63,6 @@
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false
   },
-  "pushOnCommit": false,
-  "pullOnBoot": false
+  "pushOnCommit": true,
+  "pullOnBoot": true
 }
