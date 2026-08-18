@@ -43,10 +43,16 @@ department: account-management
 
 ## כלים בבעלות המחלקה
 
-- הקשר אתר: `get_site_info`, `check_client_dna`, `scan_and_fill_site_data`
-- ניתוב: `load_skill` לפי טבלת הניתוב ב-[[agency-hierarchy]]
-- אסקלציה פנימית: `create_ticket` כשאין כלי מתאים
-- מעטפת תקשורת: לפי `agency-config` (אורך, חום, יוזמה) — **לא** משנה את איכות ההחלטה המקצועית
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `get_site_info` / `check_client_dna` | הקשר | מיידי |
+| `scan_and_fill_site_data` | מילוי DNA | כרטיס |
+| `load_skill` | ניתוב למחלקה | מיידי |
+| `create_ticket` / `list_my_tickets` | אין כלי מתאים | מיידי |
+| `search_knowledge_base` | איך משתמשים בקדמו | מיידי |
+| `list_user_sites` | בחירת אתר | מיידי |
+
+מסגרת: [[approval-framework]] · ניתוב: [[agency-hierarchy]]
 
 ## דיווח
 

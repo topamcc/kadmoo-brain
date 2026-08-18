@@ -53,11 +53,17 @@ department: creative
 6. **Production Brief** — הנחיות הפקה לפורמט
 7. **Creative Learning Record** — למה עבד / לא עבד
 
-## Skills וכלים
+## Skills וכלים + אישור
 
-- Skill: [[creative]]
-- ידע: [[pipeline-stages]], [[strategy-stack]], [[visual-typography-protocol]]
-- כלים: `check_client_dna`, `scan_and_fill_site_data`, `resolve_offer_assets`, `upsert_creative_request`, `generate_ad_image`, `record_creative_feedback`, `get_creative_performance`, `create_campaign_draft`, `activate_campaign`
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `check_client_dna` / `scan_and_fill_site_data` | DNA | מיידי / כרטיס |
+| `upsert_creative_request` / `generate_ad_image` | הפקה | מיידי (עם שערי רפרנס) |
+| `generate_video` | וידאו | כרטיס |
+| `create_campaign_draft` → `activate_campaign` | פרסום | **אישור כפול** |
+| `record_creative_feedback` / `get_creative_performance` | למידה | מיידי |
+
+Skill: [[creative]] · [[generate_video]] · Pipeline: [[pipeline-stages]] · [[approval-framework]]
 
 ## גבולות
 

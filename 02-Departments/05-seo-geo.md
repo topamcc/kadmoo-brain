@@ -52,12 +52,26 @@ department: seo-geo
 | המלצות צמיחה חוצות-ערוצים | [[02-strategy-analytics]] |
 | הצגת תוצאות ללקוח | [[01-account-management]] |
 
-## כלים מרכזיים
+## כלים מרכזיים + אישור
 
-`get_keyword_rankings`, `get_user_keywords_summary`, `get_search_console_data`, `list_site_keywords`, `suggest_keywords`, `add_keywords`, `get_audit_summary`, `get_backlinks_status`, `search_site_knowledge`
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `create_site` | אתר חדש | כרטיס |
+| `get_connect_links` / `get_site_integrations_status` | כל החיבורים (GA, SC, Ads, Meta, Social, Clarity, GBP, WP/Wix/Shopify) | מיידי |
+| `verify_site_connection` / `check_site_plugin_status` | אימות פלאגין / פלטפורמה | מיידי |
+| `check_seo_setup` | צ׳קליסט setup | מיידי |
+| `start_keyword_discovery` / `start_competitor_keyword_discovery` | מחקר ביטויים | כרטיס |
+| `suggest_keywords` / `add_keywords` | הצעה והוספה | מילולי להוספה |
+| `run_site_audit` / `get_audit_summary` | אודיט + GEO | מילולי להרצה |
+| `list_seo_recommendations` / `apply` / `dismiss` | המלצות On-Site | כרטיס |
+| `submit_url_to_indexing` | אינדוקס | כרטיס |
+| `get_backlinks_status` / `order_external_article` | קישורים | מילולי להזמנה |
+
+ידע: [[onboarding-connections]] · [[geo-protocol]] · [[approval-framework]]
 
 ## גבולות
 
 - אל תמציא מיקומים או נפחי חיפוש.
 - שינוי ביטויים פעילים — רק אחרי אישור מפורש על הרשימה.
 - המלצות תוכן חייבות לעמוד בשערי האיכות כולל שער GEO.
+- OAuth תמיד בדפדפן הלקוח — כרטיס קישור בלבד.

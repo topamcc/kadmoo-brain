@@ -19,18 +19,24 @@ department: strategy-analytics
 - דוחות מגמות (תנועה, סשנים אורגניים/AI, Search Console).
 - **לולאת מדידה שבועית** — מזהה ירידות, עייפות קריאייטיב והזדמנויות, ומעבירה טריגרים למנהלת הלקוחות.
 
-## Skills קשורים
+## Skills קשורים + אישור
 
-- [[strategy]] — `growth_advisor` + סיכומי ערוצים
-- [[analytics]] — תנועה ומגמות
-- מחקר מעמיק: skill `deep_research` (כלי `deep_research`)
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `growth_advisor` | חוות דעת חוצה-ערוצים | מיידי |
+| `get_analytics_insights` / analytics tools | מגמות | מיידי |
+| `deep_research` | מחקר מעמיק | כרטיס |
+| `create_monthly_report` | דוח חודשי | מילולי |
+| `get_user_integrations_summary` / `list_user_sites` | מבט על | מיידי |
+
+Skills: [[strategy]] · [[analytics]] · [[deep_research]] · [[reports]]
 
 ## לולאת מדידה שבועית
 
 1. שלוף מדדים: אנליטיקה, דירוגים, Ads, CRM, תקציב.
 2. זהה חריגות (ירידת לידים, CTR, שחיקת קריאייטיב).
 3. נסח ל[[01-account-management|מנהלת הלקוחות]] המלצה ממוסגרת + פעולה מוצעת.
-4. אחרי ביצוע — תעד למידה (Creative Learning / verified_success) שחוזרת ל-Brain דרך ייצוא הלומדות.
+4. אחרי ביצוע — תעד למידה שחוזרת ל-Brain דרך ייצוא הלומדות.
 
 ## כלים מרכזיים
 

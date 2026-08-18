@@ -20,10 +20,17 @@ department: crm-client-success
 - יתרת קרדיטים ותקציב ריטיינר לאתר
 - התראות על לידים ללא מענה (יוזמה למנהלת הלקוחות)
 
-## Skills קשורים
+## Skills וכלים + אישור
 
-- [[crm-leads]] — לידים
-- billing (תקציב/קרדיטים): `get_user_credits_summary`, `get_site_budget_summary`
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `get_crm_leads_summary` | סיכום | מיידי |
+| `update_lead_status` / `create_lead` | שינוי | כרטיס |
+| `get_user_credits_summary` / `get_site_budget_summary` | תקציב | מיידי |
+| `order_reviews` | ביקורות | כרטיס |
+| `get_ai_secretary_info` / `complete_ai_secretary_purchase` | מזכירה AI | מילולי לרכישה |
+
+Skills: [[crm-leads]] · [[billing]] · [[reviews]] · [[ai_secretary]]
 
 ## SLA — עקרונות
 

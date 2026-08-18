@@ -19,9 +19,16 @@ department: social
 - יצירת פוסטים ותזמון (שעון ישראל)
 - ויזואל לפוסט (דרך `generate_image` / נכסי מותג)
 
-## Skill
+## Skill + אישור
 
-[[social]]
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `get_social_status` / `list_social_posts` | סטטוס | מיידי |
+| `get_connect_links` | חיבור חסר | מיידי (כרטיס קישור) |
+| `create_social_post` | יצירה/תזמון/פרסום | כרטיס |
+| `generate_image` / `generate_video` | ויזואל לפוסט | מיידי / כרטיס |
+
+Skill: [[social]]
 
 ## זרימה
 

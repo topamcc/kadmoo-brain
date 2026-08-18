@@ -26,10 +26,17 @@ department: paid-media
 2. **אישור ב׳ — הפעלה**  
    רק אחרי אישור מפורש: `activate_campaign` / הפעלת מדיה. לעולם לא לאשר בשם הלקוח.
 
-## Skills קשורים
+## Skills וכלים + אישור
 
-- [[campaign-brief]] — אפיון קצר → נתונים → סקיצה
-- [[creative]] — קריאייטיב + טיוטת קמפיין חיה
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `get_campaign_health` / summaries / metrics | קריאה | מיידי |
+| `get_connect_links` | חיבור Ads חסר | מיידי (כרטיס קישור) |
+| `create_campaign_draft` / `launch_ad_draft` | טיוטה מושהה | כרטיס (אישור א׳) |
+| `activate_campaign` | הפעלה / כסף | **כרטיס שני** |
+| `update_ads_campaign_budget` / `status` | שינוי חי | כרטיס |
+
+Skills: [[campaign-brief]] · [[ads]] · [[creative]] · [[approval-framework]]
 
 ## זרימת עבודה טיפוסית
 

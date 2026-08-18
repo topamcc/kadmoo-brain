@@ -26,20 +26,28 @@ scope: global
 
 ## טבלת ניתוב — בקשה → מחלקה → Skill
 
-| סוג בקשת לקוח | מחלקה | Skill לטעון | כלים עיקריים |
-|---------------|--------|-------------|---------------|
-| מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image |
-| קמפיין ממומן / לידים מפרסום / תקציב Ads | [[04-paid-media]] | `campaign-brief` (+ `creative` להפקה) | get_google_ads_summary, get_meta_ads_summary, create_campaign_draft, activate_campaign |
-| דירוגים / מילות מפתח / Search Console | [[05-seo-geo]] | `seo` / `keywords` | get_keyword_rankings, list_site_keywords, suggest_keywords |
-| אודיט / בריאות אתר / GEO | [[05-seo-geo]] | `audit` + ידע `geo-protocol` | get_audit_summary |
-| קישורים נכנסים / פרסום חיצוני | [[05-seo-geo]] | `backlinks` | get_backlinks_status, order_external_article |
-| מאמרים / קטלוג / תוכן באתר | [[06-content-studio]] | `studio` | get_articles_status, list_site_catalog, order_internal_article |
-| פוסט FB/IG / תזמון אורגני | [[07-social]] | `social` | get_social_status, create_social_post |
-| לידים / CRM / פניות | [[08-crm-client-success]] | `crm-leads` | get_crm_leads_summary, update_lead_status, create_lead |
-| תנועה / סשנים / מגמות | [[02-strategy-analytics]] | `analytics` | get_site_analytics, get_search_console_data |
-| "מה הכי כדאי לשפר" / תוכנית פעולה | [[02-strategy-analytics]] | `strategy` | growth_advisor |
-| מחקר מתחרים / שוק מעמיק | [[02-strategy-analytics]] | `deep_research` | deep_research |
-| תקציב ריטיינר / קרדיטים | [[08-crm-client-success]] | `billing` | get_site_budget_summary, get_user_credits_summary |
+| סוג בקשת לקוח | מחלקה | Skill לטעון | כלים עיקריים | אישור |
+|---------------|--------|-------------|---------------|--------|
+| אתר חדש / חיבורים / פלאגין | [[05-seo-geo]] | `seo-setup` | create_site, get_connect_links, verify_site_connection, check_seo_setup | כרטיס / מיידי |
+| מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image | כרטיס / כפול |
+| קמפיין ממומן חדש | [[04-paid-media]] | `campaign-brief` | create_campaign_draft, activate_campaign, get_connect_links | **כפול** |
+| קמפיינים קיימים / תקציב / סטטוס | [[04-paid-media]] | `ads` | get_campaign_health, update_ads_campaign_* | כרטיס |
+| דירוגים / ביטויים / מחקר | [[05-seo-geo]] | `seo` / `keywords` | get_keyword_rankings, suggest_keywords, start_keyword_discovery, start_competitor_keyword_discovery | מילולי / כרטיס |
+| אודיט / GEO | [[05-seo-geo]] | `audit` | run_site_audit, get_audit_summary | מילולי |
+| קישורים / פרסום חיצוני | [[05-seo-geo]] | `backlinks` | get_backlinks_status, order_external_article | מילולי |
+| מאמרים / אישור תוכן | [[06-content-studio]] | `studio` | order_internal_article, approve_article, update_article_content | מילולי / כרטיס |
+| דף נחיתה | [[06-content-studio]] | `landing` | create_landing_page, publish_landing_page | כרטיס |
+| פוסט FB/IG אורגני | [[07-social]] | `social` | get_social_status, create_social_post | כרטיס |
+| לידים / CRM | [[08-crm-client-success]] | `crm-leads` | get_crm_leads_summary, update_lead_status, create_lead | כרטיס |
+| תנועה / מגמות | [[02-strategy-analytics]] | `analytics` | get_site_analytics, get_analytics_insights | מיידי |
+| תוכנית פעולה / חוות דעת | [[02-strategy-analytics]] | `strategy` | growth_advisor | מיידי |
+| מחקר שוק מעמיק | [[02-strategy-analytics]] | `deep_research` | deep_research | כרטיס |
+| דוח חודשי | [[02-strategy-analytics]] | `reports` | create_monthly_report | מילולי |
+| תקציב / קרדיטים | [[08-crm-client-success]] | `billing` | get_site_budget_summary, get_user_credits_summary | מיידי |
+| ביקורות | [[08-crm-client-success]] | `reviews` | order_reviews | כרטיס |
+| מזכירה AI | [[08-crm-client-success]] | `ai_secretary` | get_ai_secretary_info, complete_ai_secretary_purchase | מילולי |
+
+מסגרת אישורים מלאה: [[approval-framework]] · חיבורים: [[onboarding-connections]]
 
 ## אסקלציה בין מחלקות
 

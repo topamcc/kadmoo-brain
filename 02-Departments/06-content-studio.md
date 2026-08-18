@@ -25,10 +25,18 @@ department: content-studio
 2. **שער GEO** (כשמופעל): BLUF חזק, סטטיסטיקות בגוף, JSON-LD מסוג Article — ראו [[geo-protocol]].
 3. התאמה לביטויים הפעילים של האתר (מחלקת SEO).
 
-## Skills וכלים
+## Skills וכלים + אישור
 
-- Skill: [[studio]]
-- כלים: `get_articles_status`, `get_user_articles_summary`, `list_site_catalog`, `list_studio_assets`, `order_internal_article`, `order_external_article`, `list_orderable_keywords`, `get_external_publisher_suggestions`, `generate_image` (לוויזואל תוכן)
+| כלי | מתי | אישור |
+|-----|-----|--------|
+| `get_articles_status` / `list_articles_pending_approval` | סטטוס | מיידי |
+| `approve_article` | אישור מאמר ממתין | כרטיס (רק הלקוח) |
+| `order_internal_article` | הזמנת מאמר | מילולי |
+| `update_article_content` / `regenerate_*` | עריכה | כרטיס |
+| `create_landing_page` / `publish_landing_page` / `unpublish_landing_page` | דפי נחיתה | כרטיס |
+| `generate_image` / `generate_video` | ויזואל | מיידי / כרטיס לווידאו |
+
+Skills: [[studio]] · [[landing]]
 
 ## זרימה
 
