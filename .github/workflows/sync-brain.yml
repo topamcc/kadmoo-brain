@@ -17,6 +17,7 @@ jobs:
           SYNC_SECRET: ${{ secrets.BRAIN_SYNC_SECRET }}
         run: |
           set -euo pipefail
+
           if [ -z "${SYNC_URL:-}" ]; then
             echo "::error::Missing repository secret KADMOO_BRAIN_SYNC_URL"
             exit 1
@@ -25,8 +26,22 @@ jobs:
             echo "::error::Missing repository secret BRAIN_SYNC_SECRET"
             exit 1
           fi
-          echo "SYNC_URL host check (no secret printed):"
-          echo "$SYNC_URL" | sed -E 's#https?://([^/]+)/.*#\1#'
+
+          # Normalize common mistakes (host-only / missing scheme)
+          case "${SYNC_URL}" in
+            http://*|https://*) ;;
+            *)
+              echo "SYNC_URL missing scheme — prepending https://"
+              SYNC_URL="https://${SYNC_URL}"
+              ;;
+          esac
+          # If only a host was pasted, append the API path
+          if [[ "${SYNC_URL}" != *"/api/agent/brain/sync"* ]]; then
+            SYNC_URL="${SYNC_URL%/}/api/agent/brain/sync"
+            echo "Appended /api/agent/brain/sync to SYNC_URL"
+          fi
+
+          echo "Using SYNC_URL: ${SYNC_URL}"
           echo "Secret length: ${#SYNC_SECRET}"
 
           HTTP_CODE=$(curl -sS -o /tmp/brain-sync.json -w "%{http_code}" -X POST \
