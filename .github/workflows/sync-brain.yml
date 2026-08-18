@@ -1,0 +1,19 @@
+name: Sync Kadmoo Brain
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Kadmoo Brain sync
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer ${{ secrets.BRAIN_SYNC_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"ref\":\"${{ github.sha }}\",\"repo\":\"${{ github.repository }}\"}" \
+            "${{ secrets.KADMOO_BRAIN_SYNC_URL }}"
