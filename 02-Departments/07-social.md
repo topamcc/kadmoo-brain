@@ -3,21 +3,22 @@ kadmoo_type: knowledge
 status: approved
 slug: dept-social
 domain: social
-when_to_use: "פוסטים אורגניים, פייסבוק, אינסטגרם, תזמון תוכן, רשתות חברתיות (לא ממומן)"
+when_to_use: "פוסטים אורגניים, פייסבוק, אינסטגרם, לינקדאין, טיקטוק, יוטיוב, רילס, סטורי, תזמון תוכן, רשתות חברתיות (לא ממומן)"
 scope: global
 department: social
 ---
 
 # מחלקת סושיאל (אורגני)
 
-פרסום אורגני בפייסבוק ובאינסטגרם — נוכחות, תזמון ואינסייטים בסיסיים. **לא** קמפיינים ממומנים.
+פרסום אורגני בפייסבוק, אינסטגרם, לינקדאין, טיקטוק ויוטיוב — נוכחות, תזמון, קפשן מותאם ואינסייטים בסיסיים. **לא** קמפיינים ממומנים.
 
 ## תחומי אחריות
 
-- בדיקת חיבור עמוד וסטטוס
+- בדיקת חיבור Meta (FB/IG) ו-Outstand (LinkedIn/TikTok/YouTube)
 - רשימת פוסטים אחרונים ותקלות
-- יצירת פוסטים ותזמון (שעון ישראל)
-- ויזואל לפוסט (דרך `generate_image` / נכסי מותג)
+- יצירת פוסטים, פלייסמנטים (feed/reels/story) ותזמון (שעון ישראל)
+- קפשן פר-פלטפורמה (`generate_social_caption`) והמלצת זמן (`suggest_social_best_time`)
+- ויזואל לפוסט (נכסי מותג / סטודיו / `generate_image` / `generate_video`)
 
 ## Skill + אישור
 
@@ -25,26 +26,30 @@ department: social
 |-----|-----|--------|
 | `get_social_status` / `list_social_posts` | סטטוס | מיידי |
 | `get_connect_links` | חיבור חסר | מיידי (כרטיס קישור) |
+| `generate_social_caption` / `suggest_social_best_time` | הכנה | מיידי |
 | `create_social_post` | יצירה/תזמון/פרסום | כרטיס |
-| `generate_image` / `generate_video` | ויזואל לפוסט | מיידי / כרטיס |
+| `generate_image` / `generate_video` / `list_brand_assets` | ויזואל | מיידי / כרטיס |
 
-Skill: [[social]]
+Skill: [[social]] · ידע: [[platform-specs]] · פלואו: [[social-publishing-flow]]
 
 ## זרימה
 
-1. `get_social_status` — חיבור ומצב.
-2. אם לא מחובר — `get_connect_links` (כרטיס חיבור), לא "לך ללוח הבקרה" בלי קישור.
+1. `get_social_status` — חיבור ומצב לכל הפלטפורמות.
+2. אם לא מחובר — `get_connect_links`.
 3. `list_social_posts` לרקע.
-4. `create_social_post` — טקסט בשפת הלקוח; לאינסטגרם חובה תמונה.
-5. תזמון: `schedule_at` בעתיד · מיידי: `publish_now=true` · אחרת טיוטה.
-6. כרטיס אישור — אל תאשר בשם הלקוח.
+4. בחירת פלטפורמות + פלייסמנט לפי הפורמט הוויזואלי.
+5. ויזואל מנכסי מותג/סטודיו או הפקה חדשה.
+6. `generate_social_caption` + אופציונלית `suggest_social_best_time`.
+7. `create_social_post` עם `schedule_at` / `publish_now` / טיוטה.
+8. כרטיס אישור — אל תאשר בשם הלקוח.
 
 ## גבולות
 
 | כאן (אורגני) | לא כאן |
 |--------------|--------|
-| פוסטים, תזמון, סטטוס עמוד | קמפיינים ממומנים → [[04-paid-media]] |
+| פוסטים, תזמון, סטטוס, קפשן | קמפיינים ממומנים → [[04-paid-media]] |
 | ויזואל לפוסט | Creative OS מלא למודעת מכירה → [[03-creative]] |
+| FB/IG/LI/TT/YT | X/Twitter ו-WhatsApp אורגני — לא נתמכים |
 
 ## שיתוף
 
