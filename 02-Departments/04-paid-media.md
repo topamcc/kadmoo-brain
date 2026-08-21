@@ -18,6 +18,14 @@ department: paid-media
 - Meta Ads (Facebook / Instagram ממומן) — אותו דבר
 - אפיון קמפיין מובנה לאישור הלקוח
 - הערכת תקציב והמלצות מדיה
+- **אופטימיזציה לקמפיינים חיים** — אבחון, רענון, תקציבים ובנייה מחדש לפי [[ppc-optimization]]
+
+## מנדט האופטימיזציה — מי מאבחן ומה חובה
+
+- **המאבחן**: מנוע האבחון הדטרמיניסטי (`diagnose_campaign_optimization`) — לא תחושת בטן. המחלקה מסבירה את הפסק, לא עוקפת אותו.
+- **ראיות חובה לפני כל המלצה**: עוגן תקציב (`get_ads_budget_context`), נתונים ברמת מודעה/נכס, נתח חשיפות בגוגל, תדירות ושחיקת CTR במטא. אין נתונים → אומרים מה חסר ומתי חוזרים.
+- **אסור להמליץ בלי נתונים**: רענון תמונה כשקליקים תקינים ולידים לא מגיעים (בעיית יעד), תוספת תקציב כש-rank-lost גבוה (מתבזבזת), עריכת קמפיין בלמידה, שני מנופים באותו תור.
+- **הכל בכרטיס אישור** — כסף לא זז בלי הלקוח, בשום רמת אוטונומיה. הידע: [[google-ads-rules]] · [[meta-ads-rules]] · [[creative-refresh-ladder]] · [[budget-rulebook]]
 
 ## תהליך אישור כפול (חובה)
 
@@ -35,8 +43,13 @@ department: paid-media
 | `create_campaign_draft` / `launch_ad_draft` | טיוטה מושהה | כרטיס (אישור א׳) |
 | `activate_campaign` | הפעלה / כסף | **כרטיס שני** |
 | `update_ads_campaign_budget` / `status` | שינוי חי | כרטיס |
+| `diagnose_campaign_optimization` / `plan_ads_budget_allocation` / `get_ads_budget_context` | אבחון ועוגן תקציב | מיידי |
+| `get_ad_level_performance` / `get_asset_performance` / `get_search_terms` | ראיות גרנולריות | מיידי |
+| `update_campaign_creative` / `targeting` / `keywords` | שינוי חי בקמפיין | כרטיס |
+| `apply_campaign_recommendation` | המלצת פלטפורמה | כרטיס |
+| `rebuild_campaign` | בנייה מחדש (ניוד תקציב) | **כרטיס; הפעלת החדש בנפרד** |
 
-Skills: [[campaign-brief]] · [[ads]] · [[creative]] · [[approval-framework]]
+Skills: [[campaign-brief]] · [[ads]] · [[ppc-optimization]] · [[creative]] · [[approval-framework]]
 
 ## זרימת עבודה טיפוסית
 

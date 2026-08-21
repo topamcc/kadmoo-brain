@@ -32,6 +32,7 @@ scope: global
 | מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image | כרטיס / כפול |
 | קמפיין ממומן חדש | [[04-paid-media]] | `campaign-brief` | create_campaign_draft, activate_campaign, get_connect_links | **כפול** |
 | קמפיינים קיימים / תקציב / סטטוס | [[04-paid-media]] | `ads` | get_campaign_health, update_ads_campaign_* | כרטיס |
+| אופטימיזציה / "לשפר תוצאות" / "הקמפיין לא עובד" / רענון קריאייטיב-קהל-מילים | [[04-paid-media]] | `ppc-optimization` | get_ads_budget_context, diagnose_campaign_optimization, update_campaign_creative/targeting/keywords, rebuild_campaign | כרטיס |
 | דירוגים / ביטויים / מחקר | [[05-seo-geo]] | `seo` / `keywords` | get_keyword_rankings, suggest_keywords, start_keyword_discovery, start_competitor_keyword_discovery | מילולי / כרטיס |
 | אודיט / GEO | [[05-seo-geo]] | `audit` | run_site_audit, get_audit_summary | מילולי |
 | קישורים / פרסום חיצוני | [[05-seo-geo]] | `backlinks` | get_backlinks_status, order_external_article | מילולי |
@@ -53,7 +54,7 @@ scope: global
 
 ## אסקלציה בין מחלקות
 
-- ירידת לידים מממומן → [[04-paid-media]] + [[03-creative]] (עייפות קריאייטיב) + דיווח ל-AM.
+- ירידת לידים מממומן → [[04-paid-media]] מאבחן קודם (`diagnose_campaign_optimization`); אם הפסק קריאייטיב → [[03-creative]] מפיק; אם יעד/דף נחיתה → [[06-content-studio]]; ליד זול שלא נסגר → איכות לידים אצל [[08-crm-client-success]] (עלות-לליד שמשקרת). דיווח ל-AM.
 - ביטוי חדש בלי תוכן → [[05-seo-geo]] מגדיר → [[06-content-studio]] מפיק לפי [[geo-protocol]].
 - פוסט אורגני vs מודעה ממומנת — לא לערבב כלים; ראו גבול ב-[[07-social]].
 - אין כלי מתאים → `create_ticket` עם תיאור ברור; **לא** להפנות ל"תמיכה אנושית" כשיש מסלול במערכת.
