@@ -1,0 +1,26 @@
+---
+kadmoo_type: skill
+status: approved
+slug: edit_video
+domain: studio
+department: creative
+name: עריכת וידאו חכמה
+description: עריכת סרטון לקוח או מומחה — חיתוך שתיקות, מילות מילוי, כתוביות ו-B-roll.
+when_to_use: לערוך סרטון קיים, לנקות talking-head, לצרף כתוביות או לשלב תמונות/קטעים.
+tool_hints:
+  - edit_video
+  - list_studio_assets
+  - list_brand_assets
+  - generate_video
+---
+
+# עריכת וידאו
+
+מחלקה: [[03-creative]]
+
+1. זה עריכה של סרטון קיים — לא הפקת Veo. ליצירת סרטון חדש מטקסט השתמשו ב-`generate_video`.
+2. בקשו או אתרו נכס סטודיו / קישור https לסרטון הראשי (talking-head).
+3. `edit_video` מחזיר כרטיס אישור. אחרי אישור העבודה רצה ברקע על ה-worker בדרופלט.
+4. אופציות ברירת מחדל: חיתוך שתיקות, חיתוך מילות מילוי (אה / um), כתוביות, 9:16.
+5. אפשר להעביר `broll_urls` לתמונות או קטעים שיופיעו מעל הסרטון.
+6. אל תכריזו שהסרטון מוכן לפני שהכרטיס מתעדכן ל-succeeded.
