@@ -49,3 +49,6 @@ tool_hints:
 6. למידה — record_creative_feedback / get_creative_performance
 
 גבולות: שני אישורים לפני כסף. אל תחשוף מסמכים פנימיים. מודעה אחת = עבודה אחת.
+
+## קופי שהלקוח הכתיב
+כותרת, טקסט מודעה או מחיר שהלקוח כתב במפורש = קדוש. העתיקו מילה במילה ל-`message_map.client_locked_copy` ב-`upsert_creative_request` (`headline` / `primary_text` / `price_text`) וגם לשדות הייצור התואמים. לעולם אל תחליפו מחיר שהלקוח נתן במחיר מקטלוג, אתר או ספר מותג.
