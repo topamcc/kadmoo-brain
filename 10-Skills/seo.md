@@ -44,4 +44,4 @@ tool_hints:
 2. ביטויים: `list_site_keywords` → `suggest_keywords` → בחירת לקוח → `add_keywords` רק אחרי אישור מפורש.
 3. מחקר מעמיק: `start_keyword_discovery` / `start_competitor_keyword_discovery` → מעקב ב-`get_user_discovery_sessions`.
 4. לולאת תיקון: `run_site_audit` / `list_seo_recommendations` → תיקון מאמר (`update_article_content` / regenerate) → `submit_url_to_indexing` → `apply_seo_recommendation` או `dismiss`.
-5. GEO: יישם [[geo-protocol]] ותאם עם [[06-content-studio]].
+5. GEO: יישם [[geo-protocol]] + [[geo-content-patterns]] ותאם עם [[06-content-studio]]. אשכולות, לא מילים בודדות.

@@ -22,7 +22,7 @@ tool_hints:
 
 # אסטרטגיית צמיחה
 
-מחלקה: [[02-strategy-analytics]] · Stack: [[strategy-stack]] · היררכיה: [[agency-hierarchy]]
+מחלקה: [[02-strategy-analytics]] · Stack: [[strategy-stack]] · הצעה: [[offer-design]] · פסיכולוגיה: [[marketing-psychology]] · היררכיה: [[agency-hierarchy]]
 
 - growth_advisor מרכזי — תוכנית מתועדפת + מדדים
 - פרשנות אנושית קצרה; ציין missing_sources בעדינות

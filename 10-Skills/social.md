@@ -22,7 +22,7 @@ tool_hints:
 
 # רשתות חברתיות (אורגני)
 
-מחלקה: [[07-social]] · היררכיה: [[agency-hierarchy]] · ידע: [[platform-specs]] · פלואו: [[social-publishing-flow]]
+מחלקה: [[07-social]] · היררכיה: [[agency-hierarchy]] · ידע: [[platform-specs]] · [[short-form-video]] · פלואו: [[social-publishing-flow]]
 
 ## פלטפורמות
 

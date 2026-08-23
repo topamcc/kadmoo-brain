@@ -39,6 +39,6 @@ tool_hints:
 
 1. תמיד get_campaign_health קודם
 2. טון: wins → תובנה → 1–2 פעולות בכרטיס אישור
-3. budget/status רק בכרטיס; קמפיין חדש → load_skill campaign-brief
+3. budget/status רק בכרטיס `update_ads_campaign_budget` / `update_ads_campaign_status` — כרטיס לכל קמפיין, לעולם לא טיקט. קמפיין חדש → load_skill campaign-brief
 4. חיבור חסר → get_connect_links
 5. explain_ad_placement להסבר מיקומי PMax

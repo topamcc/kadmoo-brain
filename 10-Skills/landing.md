@@ -16,8 +16,8 @@ tool_hints:
 
 # דפי נחיתה
 
-מחלקה: [[06-content-studio]]
+מחלקה: [[06-content-studio]] · קופי: [[landing-copy-frameworks]] · טופס: [[lead-form-rules]]
 
-1. create_landing_page — בריף קצר + כרטיס אישור (נבנה ברקע)
+1. create_landing_page — בריף קצר + כרטיס אישור (נבנה ברקע). הבריף לפי [[landing-copy-frameworks]]; הטופס לפי [[lead-form-rules]].
 2. list_landing_pages — רשימה
 3. publish_landing_page / unpublish_landing_page — כרטיס אישור נפרד

@@ -22,9 +22,10 @@ tool_hints:
 
 # אודיט טכני ו-GEO
 
-מחלקה: [[05-seo-geo]] · [[geo-protocol]]
+מחלקה: [[05-seo-geo]] · [[geo-protocol]] · ספים: [[technical-seo-thresholds]]
 
 - run_site_audit רק אחרי אישור מילולי
-- get_audit_status / get_audit_summary — הצג קריטיים קודם
+- get_audit_status / get_audit_summary — הצג קריטיים קודם; פרשנות לפי [[technical-seo-thresholds]]
 - אחרי סיכום הצע תיקון קונקרטי (לא רק דוח)
 - תיקון תוכן → submit_url_to_indexing
+- אם האודיט מדווח "אין סכמה" — לבדוק אם זה JS של תוסף, לא חסר אמיתי.

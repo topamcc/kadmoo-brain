@@ -22,3 +22,4 @@ tool_hints:
 - get_backlinks_status → keyword → טווח מחיר → suggestions → order_external_article אחרי אישור
 - אל תמציא מחירים או שמות אתרים
 - תומך גם ב-E-E-A-T ו-GEO — [[geo-protocol]]
+- עמודי סיכום נתונים/סטטיסטיקה מרוויחים פי ~4 מקישורים מעמודי מחקר מקורי — פורמט מועדף כשמזמינים מאמר חיצוני.
