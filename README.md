@@ -16,6 +16,7 @@ Vault של Obsidian — Second Brain למשרד הפרסום האוטונומי 
 | `30-Knowledge/` | ידע מקצועי (אסטרטגיה, Creative OS, SEO-GEO, ויז׳ואל וכו׳) |
 | `40-Clients/` | הערות לפי לקוח / אתר |
 | `50-Agent-Learnings/` | כתיבה חוזרת מהסוכן — למידה לפני קידום ל־Playbook |
+| `90-Archive/` | קבצים ישנים שאינם לסינכרון |
 | `_templates/` | תבניות Frontmatter לכל סוג מסמך |
 
 ## חוזה Frontmatter
