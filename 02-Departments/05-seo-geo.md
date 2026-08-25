@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-seo-geo
+name: מחלקת SEO ו-GEO
 domain: seo
 when_to_use: "SEO, דירוגים, מילות מפתח, אודיט טכני, קישורים, אינדוקס, GEO, AI Overviews, נראות ב-ChatGPT/Perplexity"
 scope: global
 department: seo-geo
+aliases:
+  - 05-seo-geo
 ---
 
 # מחלקת SEO & GEO

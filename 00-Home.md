@@ -29,6 +29,7 @@
 - [[agency-hierarchy]]
 - [[approval-framework]]
 - [[social-publishing-flow]]
+- [[technical-failure-protocol]]
 
 ## Skills
 

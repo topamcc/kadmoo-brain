@@ -6,7 +6,7 @@ domain: seo
 department: seo-geo
 name: ביטויים (מילות מפתח)
 description: הצגה, הצעה והוספה של ביטויים פעילים לאתר.
-when_to_use: לראות, להוסיף או להציע ביטויים לפי כיוון או פרופיל.
+when_to_use: לראות, להוסיף או להציע ביטויים לפי כיוון או פרופיל. לא לדירוגים או מצב קידום כללי (seo), לא לאודיט (audit).
 tool_hints:
   - list_site_keywords
   - suggest_keywords

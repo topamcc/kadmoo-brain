@@ -6,7 +6,7 @@ domain: seo
 department: seo-geo
 name: SEO ומילות מפתח
 description: דירוגי מילות מפתח, מעקב מיקומים, מגמת שיפור, המלצות On-Site ונתוני חיפוש.
-when_to_use: מצב קידום האתר, דירוגים, מילות מפתח, מיקומים בגוגל, Search Console, תיקון תוכן לפי SEO/GEO.
+when_to_use: מצב קידום האתר, דירוגים, מילות מפתח, מיקומים בגוגל, Search Console, תיקון תוכן לפי SEO/GEO. לא לחיבורים חדשים (seo-setup), לא לאודיט טכני בלבד (audit), לא לניהול רשימת ביטויים בלבד (keywords).
 tool_hints:
   - get_keyword_rankings
   - list_site_keywords

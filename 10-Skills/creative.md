@@ -6,7 +6,7 @@ domain: creative
 department: creative
 name: קריאייטיב (Creative OS)
 description: משרד פרסום אוטונומי — Client DNA, Strategy Stack, קונספט, ארט, הפקה, QA, טיוטה ולמידה.
-when_to_use: מודעה, קריאייטיב, באנר, ויזואל, וריאציה או קמפיין ממומן.
+when_to_use: מודעה, קריאייטיב, באנר, ויזואל, וריאציה או קמפיין ממומן. לא הפקת סרטון חדש בלבד (generate_video), לא עריכת סרטון קיים (edit_video).
 tool_hints:
   - check_client_dna
   - scan_and_fill_site_data

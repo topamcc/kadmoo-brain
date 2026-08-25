@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-creative
+name: מחלקת קריאייטיב
 domain: creative
 when_to_use: "מודעות, קריאייטיב, באנרים, ויזואל, Creative OS, קונספט והפקה"
 scope: global
 department: creative
+aliases:
+  - 03-creative
 ---
 
 # מחלקת קריאייטיב — Creative OS

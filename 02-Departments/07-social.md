@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-social
+name: מחלקת סושיאל
 domain: social
 when_to_use: "פוסטים אורגניים, פייסבוק, אינסטגרם, לינקדאין, טיקטוק, יוטיוב, רילס, סטורי, תזמון תוכן, רשתות חברתיות (לא ממומן)"
 scope: global
 department: social
+aliases:
+  - 07-social
 ---
 
 # מחלקת סושיאל (אורגני)

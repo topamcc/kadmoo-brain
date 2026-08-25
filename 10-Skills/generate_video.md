@@ -6,7 +6,7 @@ domain: studio
 department: creative
 name: יצירת וידאו (Veo 3)
 description: הפקת סרטון קצר ממותג עם Google Veo 3.
-when_to_use: סרטון קצר, image-to-video, וידאו למותג או מבצע.
+when_to_use: סרטון קצר, image-to-video, וידאו למותג או מבצע. לא עריכת סרטון קיים (edit_video), לא באנר סטיל בלבד (creative).
 tool_hints:
   - generate_video
   - list_brand_assets

@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-strategy-analytics
+name: מחלקת אסטרטגיה ואנליטיקה
 domain: strategy
 when_to_use: "חוות דעת אסטרטגית, תוכנית פעולה, אנליטיקה, מחקר שוק, דוחות ביצועים"
 scope: global
 department: strategy-analytics
+aliases:
+  - 02-strategy-analytics
 ---
 
 # מחלקת אסטרטגיה ואנליטיקה

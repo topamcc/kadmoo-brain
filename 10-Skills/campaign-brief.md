@@ -6,7 +6,7 @@ domain: ads
 department: paid-media
 name: אפיון קמפיין
 description: תהליך סוכנות מלא — Client DNA, אפיון, סקיצה, קריאייטיב, טיוטה מושהה והפעלה באישור כפול.
-when_to_use: קמפיין חדש / לידים / "מה כדאי לפרסם" / הצעה לפרסום ממומן.
+when_to_use: קמפיין חדש / לידים / "מה כדאי לפרסם" / הצעה לפרסום ממומן. לא ליווי קמפיין קיים (ads), לא אופטימיזציה (ppc-optimization).
 tool_hints:
   - check_client_dna
   - scan_and_fill_site_data

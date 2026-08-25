@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-paid-media
+name: מחלקת מדיה ממומנת
 domain: ads
 when_to_use: "קמפיינים ממומנים, Google Ads, Meta Ads, תקציב פרסום, אפיון קמפיין"
 scope: global
 department: paid-media
+aliases:
+  - 04-paid-media
 ---
 
 # מחלקת מדיה ממומנת (PPC)

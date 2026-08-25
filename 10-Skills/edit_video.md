@@ -6,7 +6,7 @@ domain: studio
 department: creative
 name: עריכת וידאו חכמה
 description: עריכת סרטון לקוח או מומחה — חיתוך שתיקות, מילות מילוי, כתוביות ו-B-roll.
-when_to_use: לערוך סרטון קיים, לנקות talking-head, לצרף כתוביות או לשלב תמונות/קטעים.
+when_to_use: לערוך סרטון קיים, לנקות talking-head, לצרף כתוביות או לשלב תמונות/קטעים. לא הפקת Veo חדשה (generate_video).
 tool_hints:
   - edit_video
   - list_studio_assets

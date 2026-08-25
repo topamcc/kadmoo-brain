@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-account-management
+name: מחלקת ניהול לקוחות
 domain: account-management
 when_to_use: "כל אינטראקציה עם הלקוח — תפקיד מנהלת הלקוחות, גבולות סמכות ומסגור החלטות"
 scope: global
 department: account-management
+aliases:
+  - 01-account-management
 ---
 
 # מחלקת ניהול לקוחות — מנהלת הלקוחות

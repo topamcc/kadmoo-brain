@@ -6,7 +6,7 @@ domain: ads
 department: paid-media
 name: פרסום ממומן
 description: ליווי קמפיינים קיימים ב-Google/Meta — בריאות, המלצות, תקציב וסטטוס.
-when_to_use: סטטוס, ביצועים, "איזו מודעה פחות עובדת", תקציב או בריאות של קמפיינים קיימים — לא יצירת קמפיין חדש.
+when_to_use: סטטוס, ביצועים, "איזו מודעה פחות עובדת", תקציב או בריאות של קמפיינים קיימים. לא קמפיין חדש (campaign-brief), לא אופטימיזציה עמוקה (ppc-optimization).
 tool_hints:
   - get_campaign_health
   - get_site_integrations_status

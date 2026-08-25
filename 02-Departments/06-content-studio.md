@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-content-studio
+name: מחלקת סטודיו תוכן
 domain: content
 when_to_use: "מאמרים, תוכן באתר, קטלוג, סטטוס פרסום, דפי נחיתה, הזמנת תוכן"
 scope: global
 department: content-studio
+aliases:
+  - 06-content-studio
 ---
 
 # מחלקת סטודיו תוכן

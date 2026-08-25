@@ -2,9 +2,12 @@
 kadmoo_type: knowledge
 status: approved
 slug: agency-org-chart
+name: מבנה ארגוני
 domain: agency
 when_to_use: "תמיד — מבנה ארגוני של סוכנות קדמו; מי מדווח למי ומה תפקיד כל מחלקה"
 scope: global
+aliases:
+  - 00-org-chart
 ---
 
 # מבנה ארגוני — סוכנות דיגיטל קדמו 2026

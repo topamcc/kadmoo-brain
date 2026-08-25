@@ -6,7 +6,7 @@ domain: seo
 department: seo-geo
 name: הגדרות SEO וחיבורים
 description: בדיקת setup ראשוני — חיבורים, ביטויים, אנליטיקה, אודיט ופלאגין.
-when_to_use: "האם הכל מחובר", Google Search Console, GA4, אתר חדש, בדיקת התקנה, חיבורים חסרים.
+when_to_use: "האם הכל מחובר", Google Search Console, GA4, אתר חדש, בדיקת התקנה, חיבורים חסרים. לא לדירוגים שוטפים (seo), לא לאודיט מפורט (audit).
 tool_hints:
   - check_seo_setup
   - get_site_integrations_status

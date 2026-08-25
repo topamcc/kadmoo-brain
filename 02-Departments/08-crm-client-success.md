@@ -2,10 +2,13 @@
 kadmoo_type: knowledge
 status: approved
 slug: dept-crm-client-success
+name: מחלקת שירות לקוחות ו-CRM
 domain: crm
 when_to_use: "לידים, CRM, פניות, סטטוס ליד, תקציב ריטיינר, קרדיטים, שירות לקוח"
 scope: global
 department: crm-client-success
+aliases:
+  - 08-crm-client-success
 ---
 
 # מחלקת שירות לקוחות ו-CRM
