@@ -6,13 +6,16 @@ domain: seo
 department: seo-geo
 name: SEO ומילות מפתח
 description: דירוגי מילות מפתח, מעקב מיקומים, מגמת שיפור, המלצות On-Site ונתוני חיפוש.
-when_to_use: דירוגים, מילות מפתח, מיקומים בגוגל, Search Console, תיקון תוכן לפי SEO/GEO.
+when_to_use: מצב קידום האתר, דירוגים, מילות מפתח, מיקומים בגוגל, Search Console, תיקון תוכן לפי SEO/GEO.
 tool_hints:
   - get_keyword_rankings
   - list_site_keywords
   - suggest_keywords
   - add_keywords
   - get_search_console_data
+  - get_analytics_insights
+  - get_site_integrations_status
+  - check_seo_setup
   - web_search
   - get_user_keywords_summary
   - submit_url_to_indexing
@@ -40,6 +43,7 @@ tool_hints:
 מחלקה: [[05-seo-geo]] · GEO: [[geo-protocol]] · היררכיה: [[agency-hierarchy]]
 
 ## זרימה
+0. "מה מצב הקידום?" — קודם `check_seo_setup` + `get_site_integrations_status`, אחר כך `get_audit_summary` + `get_analytics_insights` + `get_keyword_rankings`. בלי אודיט קיים — בקשו אישור ל-`run_site_audit`. חיבור חסר → `get_connect_links`.
 1. דירוגים: `get_keyword_rankings` — הצג deltas וחלוקה; אל תמציא מיקומים.
 2. ביטויים: `list_site_keywords` → `suggest_keywords` → בחירת לקוח → `add_keywords` רק אחרי אישור מפורש.
 3. מחקר מעמיק: `start_keyword_discovery` / `start_competitor_keyword_discovery` → מעקב ב-`get_user_discovery_sessions`.

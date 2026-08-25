@@ -6,7 +6,7 @@ domain: audit
 department: seo-geo
 name: אודיט טכני
 description: ציוני אודיט טכני ו-GEO, ביצועים, סכמה, קישורים ובעיות מובילות.
-when_to_use: בריאות אתר, אודיט, ציונים, בעיות לתיקון, GEO.
+when_to_use: מצב האתר / מצב הקידום, בריאות אתר, אודיט, ציונים, בעיות לתיקון, GEO.
 tool_hints:
   - run_site_audit
   - get_audit_status

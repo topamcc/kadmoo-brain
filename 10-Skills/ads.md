@@ -6,7 +6,7 @@ domain: ads
 department: paid-media
 name: פרסום ממומן
 description: ליווי קמפיינים קיימים ב-Google/Meta — בריאות, המלצות, תקציב וסטטוס.
-when_to_use: סטטוס, ביצועים, תקציב או בריאות של קמפיינים קיימים — לא יצירת קמפיין חדש.
+when_to_use: סטטוס, ביצועים, "איזו מודעה פחות עובדת", תקציב או בריאות של קמפיינים קיימים — לא יצירת קמפיין חדש.
 tool_hints:
   - get_campaign_health
   - get_site_integrations_status
@@ -14,6 +14,7 @@ tool_hints:
   - get_google_ads_summary
   - get_meta_ads_summary
   - get_campaign_metrics
+  - get_ad_level_performance
   - get_pmax_diagnostics
   - get_meta_campaign_recommendations
   - get_google_campaign_recommendations
@@ -38,7 +39,8 @@ tool_hints:
 מחלקה: [[04-paid-media]]
 
 1. תמיד get_campaign_health קודם
-2. טון: wins → תובנה → 1–2 פעולות בכרטיס אישור
+2. "איזו מודעה פחות עובדת" → אחרי הבריאות קראו `get_ad_level_performance` לקמפיין החלש, ואז `load_skill('ppc-optimization')` + `diagnose_campaign_optimization` לפני המלצה. המלצה רק למנוף שהכלים מאפשרים, בכרטיס אישור.
+3. טון: wins → תובנה → 1–2 פעולות בכרטיס אישור
 3. budget/status רק בכרטיס `update_ads_campaign_budget` / `update_ads_campaign_status` — כרטיס לכל קמפיין, לעולם לא טיקט. קמפיין חדש → load_skill campaign-brief
 4. חיבור חסר → get_connect_links
 5. explain_ad_placement להסבר מיקומי PMax
