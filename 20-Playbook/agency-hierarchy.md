@@ -35,6 +35,7 @@ scope: global
 | סוג בקשת לקוח | מחלקה | Skill לטעון | כלים עיקריים | אישור |
 |---------------|--------|-------------|---------------|--------|
 | אתר חדש / חיבורים / פלאגין | [[05-seo-geo]] | `seo-setup` | create_site, get_connect_links, verify_site_connection, check_seo_setup | כרטיס / מיידי |
+| מצב קידום / "מה המצב באתר" | [[05-seo-geo]] | `seo-setup` + `audit` + `seo` | check_seo_setup, get_audit_summary, get_analytics_insights, get_keyword_rankings | מיידי / מילולי לאודיט חדש |
 | מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image | כרטיס / כפול |
 | קמפיין ממומן חדש | [[04-paid-media]] | `campaign-brief` | create_campaign_draft, activate_campaign, get_connect_links | **כפול** |
 | קמפיינים קיימים / תקציב / סטטוס | [[04-paid-media]] | `ads` | get_campaign_health, update_ads_campaign_* | כרטיס |

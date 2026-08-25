@@ -41,6 +41,6 @@ tool_hints:
 1. תמיד get_campaign_health קודם
 2. "איזו מודעה פחות עובדת" → אחרי הבריאות קראו `get_ad_level_performance` לקמפיין החלש, ואז `load_skill('ppc-optimization')` + `diagnose_campaign_optimization` לפני המלצה. המלצה רק למנוף שהכלים מאפשרים, בכרטיס אישור.
 3. טון: wins → תובנה → 1–2 פעולות בכרטיס אישור
-3. budget/status רק בכרטיס `update_ads_campaign_budget` / `update_ads_campaign_status` — כרטיס לכל קמפיין, לעולם לא טיקט. קמפיין חדש → load_skill campaign-brief
-4. חיבור חסר → get_connect_links
-5. explain_ad_placement להסבר מיקומי PMax
+4. budget/status רק בכרטיס `update_ads_campaign_budget` / `update_ads_campaign_status` — כרטיס לכל קמפיין, לעולם לא טיקט. קמפיין חדש → load_skill campaign-brief
+5. חיבור חסר → get_connect_links
+6. explain_ad_placement להסבר מיקומי PMax
