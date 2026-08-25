@@ -1,17 +1,19 @@
 ---
 kadmoo_type: skill
 status: approved
-slug: edit_video
+slug: edit-video
 domain: studio
 department: creative
 name: עריכת וידאו חכמה
 description: עריכת סרטון לקוח או מומחה — חיתוך שתיקות, מילות מילוי, כתוביות ו-B-roll.
-when_to_use: לערוך סרטון קיים, לנקות talking-head, לצרף כתוביות או לשלב תמונות/קטעים. לא הפקת Veo חדשה (generate_video).
+when_to_use: לערוך סרטון קיים, לנקות talking-head, לצרף כתוביות או לשלב תמונות/קטעים. לא הפקת Veo חדשה (generate-video).
 tool_hints:
   - edit_video
   - list_studio_assets
   - list_brand_assets
   - generate_video
+aliases:
+  - edit_video
 ---
 
 # עריכת וידאו

@@ -10,7 +10,7 @@ Vault של Obsidian — Second Brain למשרד הפרסום האוטונומי 
 |--------|--------|
 | `00-Inbox/` | קליטה מהירה לפני מיון |
 | `01-Agency/` | הגדרות סוכנות (`agency-config`) — פרסונה, טון, כלים |
-| `02-Departments/` | מבנה ארגוני ומחלקות (AM, SEO&GEO, PPC, Creative, Social…) |
+| `02-Departments/` | מבנה ארגוני ומחלקות — מסונכרן כ-knowledge |
 | `10-Skills/` | Skills לסוכן — מתי להפעיל ומה לעשות |
 | `20-Playbook/` | עקרונות ונהלים מאושרים |
 | `30-Knowledge/` | ידע מקצועי (אסטרטגיה, Creative OS, SEO-GEO, ויז׳ואל וכו׳) |

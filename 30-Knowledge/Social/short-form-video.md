@@ -10,7 +10,7 @@ department: social
 
 # וידאו קצר
 
-מפרטים: [[platform-specs]] · סקילים: [[social]] · [[generate_video]] · [[edit_video]]
+מפרטים: [[platform-specs]] · סקילים: [[social]] · [[generate-video]] · [[edit-video]]
 
 ## כלל 3 השניות
 

@@ -83,6 +83,7 @@ npm run db:types
 | תיקייה | משפיע על |
 |--------|----------|
 | `01-Agency/` | persona, tone, voice, communication_style, enabled_tools, system_prompt_override |
+| `02-Departments/` | RAG גלובלי + `read_brain_note` (מחלקות) |
 | `10-Skills/` | `agent_skills` (נטען ב־`load_skill`) |
 | `20-Playbook/` | מדיניות משרד (מוזרקת לכל שיחה) |
 | `30-Knowledge/` | RAG גלובלי (Strategy Stack, Creative OS…) |

@@ -10,7 +10,7 @@ department: strategy-analytics
 
 # שיטת מחקר לקוחות
 
-סקיל: [[deep_research]] · Stack: [[strategy-stack]]
+סקיל: [[deep-research]] · Stack: [[strategy-stack]]
 
 ## מה מחלצים
 

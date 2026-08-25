@@ -1,7 +1,7 @@
 ---
 kadmoo_type: skill
 status: approved
-slug: ai_secretary
+slug: ai-secretary
 domain: sales
 department: crm-client-success
 name: מזכירה אישית AI
@@ -11,6 +11,8 @@ tool_hints:
   - get_ai_secretary_info
   - complete_ai_secretary_purchase
   - request_ai_secretary
+aliases:
+  - ai_secretary
 ---
 
 # מזכירה אישית AI

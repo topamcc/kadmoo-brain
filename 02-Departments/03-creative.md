@@ -66,7 +66,7 @@ aliases:
 | `create_campaign_draft` → `activate_campaign` | פרסום | **אישור כפול** |
 | `record_creative_feedback` / `get_creative_performance` | למידה | מיידי |
 
-Skill: [[creative]] · [[generate_video]] · Pipeline: [[pipeline-stages]] · [[approval-framework]]
+Skill: [[creative]] · [[generate-video]] · Pipeline: [[pipeline-stages]] · [[approval-framework]]
 
 ## ידע
 

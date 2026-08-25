@@ -1,16 +1,18 @@
 ---
 kadmoo_type: skill
 status: approved
-slug: generate_video
+slug: generate-video
 domain: studio
 department: creative
 name: יצירת וידאו (Veo 3)
 description: הפקת סרטון קצר ממותג עם Google Veo 3.
-when_to_use: סרטון קצר, image-to-video, וידאו למותג או מבצע. לא עריכת סרטון קיים (edit_video), לא באנר סטיל בלבד (creative).
+when_to_use: סרטון קצר, image-to-video, וידאו למותג או מבצע. לא עריכת סרטון קיים (edit-video), לא באנר סטיל בלבד (creative).
 tool_hints:
   - generate_video
   - list_brand_assets
   - generate_image
+aliases:
+  - generate_video
 ---
 
 # יצירת וידאו

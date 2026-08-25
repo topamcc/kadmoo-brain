@@ -7,18 +7,21 @@ on:
       - master
   workflow_dispatch:
 
+concurrency:
+  group: brain-sync
+  cancel-in-progress: true
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Lint vault (warn-only)
+      - name: Lint vault
         run: node scripts/lint-vault.mjs
 
   sync:
     runs-on: ubuntu-latest
     needs: lint
-    if: always()
     steps:
       - name: Trigger Kadmoo Brain sync
         env:

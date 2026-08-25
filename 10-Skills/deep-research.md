@@ -1,13 +1,15 @@
 ---
 kadmoo_type: skill
 status: approved
-slug: deep_research
+slug: deep-research
 domain: analytics
 department: strategy-analytics
 name: מחקר שוק מעמיק
 description: דוח מחקר מעמיק (מתחרים / שוק / גאוגרפי / מותג) עם מקורות.
 when_to_use: מחקר מתחרים, ניתוח שוק, מחקר מקומי, או שאלה שדורשת ניתוח מצוטט.
 tool_hints:
+  - deep_research
+aliases:
   - deep_research
 ---
 

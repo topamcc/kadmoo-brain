@@ -30,6 +30,7 @@
 - [[approval-framework]]
 - [[social-publishing-flow]]
 - [[technical-failure-protocol]]
+- [[agent-pulse]]
 
 ## Skills
 
@@ -38,13 +39,13 @@
 | מחלקה | Skills |
 |--------|--------|
 | AM | [[tickets]] · [[sales-discovery]] |
-| אסטרטגיה | [[strategy]] · [[analytics]] · [[deep_research]] · [[reports]] |
-| קריאייטיב | [[creative]] · [[generate_video]] · [[edit_video]] |
+| אסטרטגיה | [[strategy]] · [[analytics]] · [[deep-research]] · [[reports]] |
+| קריאייטיב | [[creative]] · [[generate-video]] · [[edit-video]] |
 | ממומן | [[campaign-brief]] · [[ads]] · [[ppc-optimization]] |
 | SEO & GEO | [[seo]] · [[keywords]] · [[audit]] · [[backlinks]] · [[seo-setup]] |
 | סטודיו | [[studio]] · [[landing]] |
 | סושיאל | [[social]] |
-| CRM | [[crm-leads]] · [[billing]] · [[reviews]] · [[ai_secretary]] |
+| CRM | [[crm-leads]] · [[billing]] · [[reviews]] · [[ai-secretary]] |
 
 ## ידע (`30-Knowledge/`)
 

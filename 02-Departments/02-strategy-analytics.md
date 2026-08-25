@@ -32,7 +32,7 @@ aliases:
 | `create_monthly_report` | דוח חודשי | מילולי |
 | `get_user_integrations_summary` / `list_user_sites` | מבט על | מיידי |
 
-Skills: [[strategy]] · [[analytics]] · [[deep_research]] · [[reports]]
+Skills: [[strategy]] · [[analytics]] · [[deep-research]] · [[reports]]
 
 ## לולאת מדידה שבועית
 

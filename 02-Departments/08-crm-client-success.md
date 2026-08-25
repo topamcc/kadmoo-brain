@@ -33,7 +33,7 @@ aliases:
 | `order_reviews` | ביקורות | כרטיס |
 | `get_ai_secretary_info` / `complete_ai_secretary_purchase` | מזכירה AI | מילולי לרכישה |
 
-Skills: [[crm-leads]] · [[billing]] · [[reviews]] · [[ai_secretary]]
+Skills: [[crm-leads]] · [[billing]] · [[reviews]] · [[ai-secretary]]
 
 ## SLA — עקרונות
 
@@ -49,7 +49,7 @@ Skills: [[crm-leads]] · [[billing]] · [[reviews]] · [[ai_secretary]]
 
 - אל תמציא `lead_id` או סכומים.
 - אל תעדכן/תיצור ליד בלי אישור מפורש.
-- מזכירה AI / מענה אוטומטי לערוצים — skill נפרד `ai_secretary` (המלצה כשיש ריבוי לידים שלא מטופלים).
+- מזכירה AI / מענה אוטומטי לערוצים — skill נפרד `ai-secretary` (המלצה כשיש ריבוי לידים שלא מטופלים).
 
 ## דיווח
 
