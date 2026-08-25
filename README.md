@@ -64,5 +64,7 @@ site_id: uuid-optional       # מזהה אתר בקדמו (אופציונלי)
 
 1. טיוטה ב־`00-Inbox/` או ישירות בתיקייה המתאימה עם `status: draft`
 2. עריכה ומעבר ל־`status: approved`
-3. Push ל־`main` / `master` → workflow מפעיל סנכרון ל־Kadmoo
+3. Push ל־`main` / `master` → lint (שגיאות חוסמות) → סנכרון ל־Kadmoo
 4. למידות מהסוכן נכנסות ל־`50-Agent-Learnings/` ואז מקודמות ל־Playbook עם `approved`
+
+לינט מקומי: `node scripts/lint-vault.mjs` (שגיאות = יציאה 1; `--strict` גם על אזהרות).
