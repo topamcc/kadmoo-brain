@@ -145,6 +145,7 @@
   "update_campaign_creative",
   "update_campaign_keywords",
   "update_campaign_targeting",
+  "update_campaign_text_guidelines",
   "update_lead_status",
   "update_site_content_settings",
   "upsert_creative_request",
