@@ -22,6 +22,7 @@ tool_hints:
   - update_campaign_creative
   - update_campaign_targeting
   - update_campaign_keywords
+  - update_campaign_bidding
   - apply_campaign_recommendation
   - rebuild_campaign
 ---

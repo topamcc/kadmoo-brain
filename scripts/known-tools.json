@@ -141,6 +141,7 @@
   "update_ads_campaign_budget",
   "update_ads_campaign_status",
   "update_article_content",
+  "update_campaign_bidding",
   "update_campaign_creative",
   "update_campaign_keywords",
   "update_campaign_targeting",
