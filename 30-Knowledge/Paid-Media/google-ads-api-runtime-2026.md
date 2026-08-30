@@ -30,9 +30,19 @@ department: paid-media
 - עבור token מוגבל או אינטגרציה חדשה, תכננו מעבר ל-Data Manager API. אל תנסו לעקוף allowlist, ואל תציגו retry כפתרון להרשאה חסרה.
 - גם קליטת session attributes או כתובת IP ב-conversion imports מוגבלת למאושרים מאז 2 בפברואר 2026; למסלול חדש השתמשו ב-Data Manager API.
 
+## Mutate ויצירת מבנים
+
+- לפני write מורכב משתמשים ב-`validate_only=true` כשאפשר. הוא מאמת אך אינו יוצר משאבים; אחרי אישור מבצעים mutate אמיתי וקוראים את המצב חזרה.
+- מבנים תלויים, ובפרט יצירת Performance Max עם Asset Group ונכסיו, חייבים להיות אטומיים: `partial_failure=false`. Partial failure מתאים לפעולות עצמאיות בלבד.
+- בתוך bulk mutate יוצרים משאב לפני שמפנים אליו, משתמשים ב-temporary resource names עם מזהים שליליים ייחודיים, ומקבצים פעולות רצופות לפי סוג משאב. מזהה זמני אינו תקף בבקשה הבאה.
+- timeout אינו הוכחה לכשל. לפני retry מחפשים לפי מזהה פעולה או קוראים את הישות, כדי שלא ליצור קמפיין כפול. לוג `pending` חייב להסתיים ב-`success` או `failed` עם שגיאת API מפורטת.
+
 ## מקורות רשמיים
 
 - [Google Ads API release notes](https://developers.google.com/google-ads/api/docs/release-notes)
 - [Deprecation and sunset](https://developers.google.com/google-ads/api/docs/sunset-dates)
 - [Feature deprecations and unversioned changes](https://developers.google.com/google-ads/api/docs/deprecations)
 - [AI Max text guidelines](https://developers.google.com/google-ads/api/docs/campaigns/ai-max-for-search-campaigns/getting-started)
+- [Mutate best practices](https://developers.google.com/google-ads/api/docs/mutating/best-practices)
+- [Partial failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures)
+- [Performance Max request structure](https://developers.google.com/google-ads/api/performance-max/structure-requests)

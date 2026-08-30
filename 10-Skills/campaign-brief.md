@@ -43,7 +43,7 @@ tool_hints:
 
 # אפיון קמפיין
 
-מחלקה: [[04-paid-media]] · קריאייטיב: [[03-creative]] · היררכיה: [[agency-hierarchy]]
+מחלקה: [[04-paid-media]] · קריאייטיב: [[03-creative]] · היררכיה: [[agency-hierarchy]] · בטיחות: [[ppc-write-safety-gates]]
 
 ## זרימה
 1. DNA קודם (`check_client_dna`) — בלי שאלות מיותרות.
@@ -52,3 +52,10 @@ tool_hints:
 4. סקיצה מובנית → אישור א׳ → `create_campaign_draft` (מושהה).
 5. אישור ב׳ → `activate_campaign` (הוצאת כסף).
 6. קריאייטיב חסר → skill `creative`.
+
+## בחירת מבנה לפני כרטיס אישור
+
+- Google Search/חיפוש → `google_campaign_type=search_ai_max`; לא הופכים בקשת Search ל-Performance Max. נדרשים כתובת יעד, לפחות 3 כותרות ו-2 תיאורים; תמונה אינה תנאי ל-RSA.
+- Google Performance Max → `google_campaign_type=performance_max`; נדרשים כתובת יעד, תמונת marketing ולוגו ריבועי נגישים, קבוצת נכסים מלאה ומעקב המרות. מחלקים Asset Groups לפי מוצר או שירות ולא מערבבים הצעות לא קשורות.
+- Meta: מאשרים יעד לפני יצירה. CBO מתאים לסקייל של קריאייטיב מוכח; ABO מתאים למעבדת בדיקות. Cost Cap מוצע רק כשיש יעד עלות, חלון attribution מאומת והבנה שהוא עשוי להפחית ניצול תקציב.
+- לפני הצגת הכרטיס מריצים preflight מלא. הכרטיס מציג סוג קמפיין, יעד, תקציב, נכסים וסטטוס מושהה. אם חסר תנאי, מציגים מה חסר ומה הפעולה הבאה — לא כרטיס שנועד להיכשל.
