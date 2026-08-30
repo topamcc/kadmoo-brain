@@ -30,6 +30,11 @@ department: paid-media
 - עבור token מוגבל או אינטגרציה חדשה, תכננו מעבר ל-Data Manager API. אל תנסו לעקוף allowlist, ואל תציגו retry כפתרון להרשאה חסרה.
 - גם קליטת session attributes או כתובת IP ב-conversion imports מוגבלת למאושרים מאז 2 בפברואר 2026; למסלול חדש השתמשו ב-Data Manager API.
 
+## Merchant Center ומוצרי Shopping
+
+- Content API for Shopping אינו מסלול חדש נתמך. אינטגרציות קטלוג ומוצרים חדשות משתמשות ב-Merchant API, ובכל שינוי בודקים את לוח ה-sunset הרשמי של Content API ואת הכיסוי בפועל ב-Merchant API.
+- אין להסב feed פעיל אוטומטית מתוך שיחת אופטימיזציה. מעבר API הוא שינוי תשתיתי נפרד עם בדיקת מוצרים, שגיאות feed ו-read-back אחרי כתיבה.
+
 ## Mutate ויצירת מבנים
 
 - לפני write מורכב משתמשים ב-`validate_only=true` כשאפשר. הוא מאמת אך אינו יוצר משאבים; אחרי אישור מבצעים mutate אמיתי וקוראים את המצב חזרה.

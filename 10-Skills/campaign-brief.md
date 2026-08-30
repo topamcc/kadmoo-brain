@@ -43,7 +43,7 @@ tool_hints:
 
 # אפיון קמפיין
 
-מחלקה: [[04-paid-media]] · קריאייטיב: [[03-creative]] · היררכיה: [[agency-hierarchy]] · בטיחות: [[ppc-write-safety-gates]]
+מחלקה: [[04-paid-media]] · קריאייטיב: [[03-creative]] · היררכיה: [[agency-hierarchy]] · בטיחות: [[ppc-write-safety-gates]] · API: [[google-ads-api-runtime-2026]] · [[meta-marketing-api-runtime-2026]]
 
 ## זרימה
 1. DNA קודם (`check_client_dna`) — בלי שאלות מיותרות.
@@ -55,7 +55,7 @@ tool_hints:
 
 ## בחירת מבנה לפני כרטיס אישור
 
-- Google Search/חיפוש → `google_campaign_type=search_ai_max`; לא הופכים בקשת Search ל-Performance Max. נדרשים כתובת יעד, לפחות 3 כותרות ו-2 תיאורים; תמונה אינה תנאי ל-RSA.
-- Google Performance Max → `google_campaign_type=performance_max`; נדרשים כתובת יעד, תמונת marketing ולוגו ריבועי נגישים, קבוצת נכסים מלאה ומעקב המרות. מחלקים Asset Groups לפי מוצר או שירות ולא מערבבים הצעות לא קשורות.
+- Google Search/חיפוש → `google_campaign_type=search_ai_max`; לא הופכים בקשת Search ל-Performance Max. נדרשים כתובת יעד, לפחות 3 כותרות ו-2 תיאורים; תמונה אינה תנאי ל-RSA. בזמן היצירה מעבירים `Campaign.text_guidelines` מתוך חוקי המותג המאושרים.
+- Google Performance Max → `google_campaign_type=performance_max`; נדרשים כתובת יעד, תמונת marketing ולוגו ריבועי נגישים, קבוצת נכסים מלאה, `Campaign.text_guidelines` מאושרים ומעקב המרות. מחלקים Asset Groups לפי מוצר או שירות ולא מערבבים הצעות לא קשורות; המבנה נוצר אטומית.
 - Meta: מאשרים יעד לפני יצירה. CBO מתאים לסקייל של קריאייטיב מוכח; ABO מתאים למעבדת בדיקות. Cost Cap מוצע רק כשיש יעד עלות, חלון attribution מאומת והבנה שהוא עשוי להפחית ניצול תקציב.
 - לפני הצגת הכרטיס מריצים preflight מלא. הכרטיס מציג סוג קמפיין, יעד, תקציב, נכסים וסטטוס מושהה. אם חסר תנאי, מציגים מה חסר ומה הפעולה הבאה — לא כרטיס שנועד להיכשל.
