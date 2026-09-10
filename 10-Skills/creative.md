@@ -45,10 +45,15 @@ tool_hints:
 2. Strategy Stack + Message Map ב-upsert_creative_request
 3. קופי קודם → generate_ad_image (אסינכרוני)
 4. תצוגה ממוסגרת (לא "מה דעתך?")
-5. create_campaign_draft → activate רק באישור שני
+5. בקמפיין ממומן: שמירת העבודה, אישור מדיה, אישור טקסט חי, אישור הדמיה ואישור קהל בכרטיס השלבים; לאחר בדיקת מוכנות — אישור פרסום מסכם אחד.
 6. למידה — record_creative_feedback / get_creative_performance
 
-גבולות: שני אישורים לפני כסף. אל תחשוף מסמכים פנימיים. מודעה אחת = עבודה אחת.
+גבולות: רק הלקוח מאשר בשלבי הקמפיין. אישור הפרסום המסכם כולל יצירה מושהית, אימות והפעלה. אל תחשוף מסמכים פנימיים. מודעה אחת = עבודה אחת.
+
+## עבודה שמורה בממומן
+פתח workflow עם `upsert_creative_request.campaign_json` כבר באפיון, וקרא `get_campaign_draft` לפני שינוי. עדכן באמצעות `update_ad_draft.campaign_json` עם הגרסה העדכנית. מדיה וטקסט שהופקו נשמרים בעבודה לפני הצגתם לאישור. שינוי טקסט חי אינו מפיק תמונה חדשה. אל תעקוף שלב באמצעות כלי יצירה ישן, ואל תבקש שוב בחירה אורגני/ממומן כאשר הלקוח כבר ביקש קמפיין ממומן.
+
+Paid campaigns use a persisted workflow. Autosave the brief, copy, placement assets and targeting; only the client can approve stages. Read the current revision before edits. The final approval covers paused creation, verification and activation. Missing connections preserve all work; reconnecting never publishes automatically.
 
 ## קופי שהלקוח הכתיב
 כותרת, טקסט מודעה או מחיר שהלקוח כתב במפורש = קדוש. העתיקו מילה במילה ל-`message_map.client_locked_copy` ב-`upsert_creative_request` (`headline` / `primary_text` / `price_text`) וגם לשדות הייצור התואמים. לעולם אל תחליפו מחיר שהלקוח נתן במחיר מקטלוג, אתר או ספר מותג.
