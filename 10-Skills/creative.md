@@ -67,3 +67,5 @@ Paid campaigns use a persisted workflow. Autosave the brief, copy, placement ass
 
 ### Campaign brief consistency
 For campaign-bound media, the saved campaign is authoritative for objective, CTA, offer and live copy. Traffic with Learn More must not retain a generic purchase/sales creative brief. Keep request, message map and strategy goal aligned before production. Remove stale review-pass markers after alignment and review again. Image corrections use the selected placement's image and preserve quoted Hebrew text. If review identifies unsupported claims, explain the missing evidence or request a focused copy correction; do not bypass review or silently alter locked text.
+
+For focused image corrections, keep the existing campaign brief and copy, skip a new concept/feed-copy round, and still run content and visual review. An explicitly requested replacement headline outranks a quote naming old text to remove. Reject leftover slogans or missing review results instead of presenting them as approved media.
