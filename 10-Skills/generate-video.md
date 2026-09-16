@@ -26,3 +26,7 @@ aliases:
 5. image-to-video (`source_image_url`) כשיש פריים מנצח — חוסך קרדיטים ומתייצב יותר. העדיפו כשיש נכס סטודיו/מותג.
 6. generate_video מחזיר כרטיס אישור — קרדיטים לפי שניות
 7. אל תכריזו שהסרטון רץ לפני אישור
+
+## סרטון בתוך קמפיין שמור
+
+קרא get_campaign_draft לפני ההצעה. העבר ל-generate_video את creative_request_id, campaign_revision ו-campaign_placement. סטורי דורש 9:16; Google PMax משתמש ב-marketing; Google Search אינו דורש וידאו. שים לב לעלות אישור ההפקה. ההשלמה מוסיפה חלופה לטיוטה, בלי לשנות קופי, קהל או תקציב ובלי לאשר פרסום. בחר את הסרטון דרך כרטיס הקמפיין.
