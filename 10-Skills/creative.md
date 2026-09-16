@@ -64,3 +64,6 @@ Paid campaigns use a persisted workflow. Autosave the brief, copy, placement ass
 ## כמות הפקות ותיקונים
 
 ברירת המחדל של generate_ad_image היא תמונה אחת (variant_count=1). רק אם הלקוח ביקש במפורש שתי חלופות ניתן להעביר variant_count=2 ולציין שתי עלויות תמונה. תיקון משתמש ב-previous_image_url וב-revision_feedback ומפיק תמונה אחת בלבד. הצג חלופה בכרטיס הטיוטה; אל תחליף את הנכס הנבחר בלי בחירה מפורשת. אסור לומר שהמדיה מוכנה כאשר הכלי החזיר status=producing — היא עדיין בהפקה.
+
+### Campaign brief consistency
+For campaign-bound media, the saved campaign is authoritative for objective, CTA, offer and live copy. Traffic with Learn More must not retain a generic purchase/sales creative brief. Keep request, message map and strategy goal aligned before production. Remove stale review-pass markers after alignment and review again. Image corrections use the selected placement's image and preserve quoted Hebrew text. If review identifies unsupported claims, explain the missing evidence or request a focused copy correction; do not bypass review or silently alter locked text.
