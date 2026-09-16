@@ -63,7 +63,7 @@ aliases:
 | `check_client_dna` / `scan_and_fill_site_data` | DNA | מיידי / כרטיס |
 | `upsert_creative_request` / `generate_ad_image` | הפקה | מיידי (עם שערי רפרנס) |
 | `generate_video` | וידאו | כרטיס |
-| `create_campaign_draft` → `activate_campaign` | פרסום | **אישור כפול** |
+| `create_campaign_draft` → `activate_campaign` | פרסום | **אישור לקוח סופי** |
 | `record_creative_feedback` / `get_creative_performance` | למידה | מיידי |
 
 Skill: [[creative]] · [[generate-video]] · Pipeline: [[pipeline-stages]] · [[approval-framework]]
