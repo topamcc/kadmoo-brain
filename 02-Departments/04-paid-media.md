@@ -30,12 +30,9 @@ aliases:
 - **אסור להמליץ בלי נתונים**: רענון תמונה כשקליקים תקינים ולידים לא מגיעים (בעיית יעד), תוספת תקציב כש-rank-lost גבוה (מתבזבזת), עריכת קמפיין בלמידה, שני מנופים באותו תור.
 - **הכל בכרטיס אישור** — כסף לא זז בלי הלקוח, בשום רמת אוטונומיה. הידע: [[google-ads-rules]] · [[meta-ads-rules]] · [[creative-refresh-ladder]] · [[budget-rulebook]]
 
-## תהליך אישור כפול (חובה)
+## אישור פרסום סופי
 
-1. **אישור א׳ — סקיצה / טיוטה**  
-   אפיון או `create_campaign_draft` — מוצג ללקוח עם מטרה, קהל, ערוצים, תקציב, קריאייטיב. אין הוצאת כסף.
-2. **אישור ב׳ — הפעלה**  
-   רק אחרי אישור מפורש: `activate_campaign` / הפעלת מדיה. לעולם לא לאשר בשם הלקוח.
+בעבודה חדשה (version=2), האפיון, הנכסים והטקסט נאספים בטיוטה משותפת. הלקוח רואה תצוגה מדויקת עם קהל, יעד ותקציב ומאשר פעם אחת. האישור מכסה יצירה מושהית, אימות והפעלה של אותה גרסה בלבד. תיקון מבטל אישור קודם. בעבודה ישנה (version=1) נשמרים אישורי השלבים שמחזירה המערכת. לעולם אין לאשר בשם הלקוח.
 
 ## Skills וכלים + אישור
 
@@ -43,8 +40,9 @@ aliases:
 |-----|-----|--------|
 | `get_campaign_health` / summaries / metrics | קריאה | מיידי |
 | `get_connect_links` | חיבור Ads חסר | מיידי (כרטיס קישור) |
-| `create_campaign_draft` / `launch_ad_draft` | טיוטה מושהה | כרטיס (אישור א׳) |
-| `activate_campaign` | הפעלה / כסף | **כרטיס שני** |
+| `create_campaign_draft.campaign_json` / `update_ad_draft.campaign_json` | טיוטה משותפת | שמירה ללא פרסום |
+| `launch_ad_draft` | יצירה, אימות והפעלה | כרטיס סופי לגרסה ולתקציב |
+| `activate_campaign` | הפעלה נפרדת של קמפיין קיים | כרטיס לפעולה המדויקת |
 | `update_ads_campaign_budget` / `status` | שינוי חי | כרטיס |
 | `diagnose_campaign_optimization` / `plan_ads_budget_allocation` / `get_ads_budget_context` | אבחון ועוגן תקציב | מיידי |
 | `get_ad_level_performance` / `get_asset_performance` / `get_search_terms` | ראיות גרנולריות | מיידי |
