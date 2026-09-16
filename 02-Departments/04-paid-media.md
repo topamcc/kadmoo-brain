@@ -40,7 +40,7 @@ aliases:
 |-----|-----|--------|
 | `get_campaign_health` / summaries / metrics | קריאה | מיידי |
 | `get_connect_links` | חיבור Ads חסר | מיידי (כרטיס קישור) |
-| `create_campaign_draft.campaign_json` / `update_ad_draft.campaign_json` | טיוטה משותפת | שמירה ללא פרסום |
+| `upsert_creative_request.campaign_json` / `update_ad_draft.campaign_json` | טיוטה משותפת | שמירה ללא פרסום |
 | `launch_ad_draft` | יצירה, אימות והפעלה | כרטיס סופי לגרסה ולתקציב |
 | `activate_campaign` | הפעלה נפרדת של קמפיין קיים | כרטיס לפעולה המדויקת |
 | `update_ads_campaign_budget` / `status` | שינוי חי | כרטיס |
@@ -66,3 +66,5 @@ Skills: [[campaign-brief]] · [[ads]] · [[ppc-optimization]] · [[creative]] ·
 - אורגני בפייסבוק/אינסטגרם = [[07-social]], לא כאן.
 - אל תמציא מספרים או עלויות — רק מהכלים.
 - תקציב ריטיינר / קרדיטים — תיאום עם [[08-crm-client-success]].
+
+טיוטה חדשה נשמרת באמצעות `upsert_creative_request.campaign_json` גם ללא חיבור לחשבון פרסום. `create_campaign_draft` הוא מסלול ישן להצעת פרסום ואינו כלי השמירה של שיחה חדשה. בכלי הצעת קופי מעבירים את הבריף הנוכחי ואת סוג הקמפיין; פרטי הבקשה המפורשים קודמים לדוגמאות מקמפיינים קודמים.
