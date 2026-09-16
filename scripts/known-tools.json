@@ -1,4 +1,12 @@
 [
+  "get_content_studio_state",
+  "quote_content_studio",
+  "prepare_content_studio_draft",
+  "prepare_content_studio_render",
+  "get_content_studio_result",
+  "get_social_post",
+  "change_social_post",
+  "prepare_content_plan",
   "activate_campaign",
   "add_catalog_item",
   "add_keywords",

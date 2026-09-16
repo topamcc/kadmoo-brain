@@ -20,7 +20,8 @@ Skill: [[social]] · מחלקה: [[07-social]] · מפרטים: [[platform-specs
 4. **קפשן** — `generate_social_caption` עם `targets` לכל הפלטפורמות הרלוונטיות. ל-IG העבר האשטגים ל-first comment כשאפשר.
 5. **זמן** — `suggest_social_best_time` → המר ל-ISO ב-`schedule_at`, או `publish_now=true`, או טיוטה.
 6. **הצעה** — `create_social_post` עם `platform` / placements / media / message. כרטיס אישור ללקוח.
-7. **אימות** — אחרי אישור: `list_social_posts`. אם `failed`/`partial` — הסבר שגיאה והצע `retry` / תיקון מדיה / חיבור מחדש.
+7. **אימות** — אחרי אישור: `get_social_post` ו־`list_social_posts`. אם `failed`/`partial`, קרא תוצאות לכל יעד וברר את הבקשה הקיימת אצל הספק. אין ליצור בקשה חדשה כאשר תוצאת הקודמת לא ודאית, ואין לשלוח שוב יעד שכבר פורסם.
+8. **תיקון** — `change_social_post` מציע תיקון ממוקד, תזמון או ביטול לגרסה שקראת. תיקון תוכן מבטל תזמון קודם; תזמון הגרסה המעודכנת מחייב אישור. תיקון טקסט אינו הפקה מחדש של תמונה או סרטון.
 
 ## דוגמאות כוונה
 
