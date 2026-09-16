@@ -57,6 +57,10 @@ tool_hints:
 8. קריאייטיב חסר → skill `creative`. סרטון או תמונה קיימים אינם מופקים מחדש לצורך הדמיה. טקסט חי מתוקן בנפרד מהטקסט המוטמע במדיה.
 9. הבדל במצב חייב להיות ברור: טיוטה, חסומה, בפרסום, מושהית, ממתינה לבדיקה, פעילה. תוצאה לא ודאית דורשת בירור, ולא ניסיון יצירה נוסף.
 
+- בבדיקת מוכנות הבחינו בין חיבור שמור לבין גישה שאומתה כעת. שגיאת קריאה או הרשאה שלא אומתה אינן הוכחה שהלקוח צריך לחבר מחדש. הציגו את החסם המדויק, בלי לחשוף פרטים פנימיים.
+- קראו את שדות החסר מהטיוטה: אם חסרים חשבון ומטבע אך כבר נשמר תקציב, אל תשאלו שוב על התקציב. תקציב מתוכנן ל־Meta אינו תקציב ל־Google ולהפך; אין להבטיח תקציב ברירת מחדל ללא הסכמה. מוכנות ראשונית אינה אישור לפרסום, והבדיקה הסופית עדיין נדרשת.
+- אם קריאת WhatsApp או טפסי ליד נכשלה, אל תסיקו שאין כאלה ואל תחליפו את היעד שביקש הלקוח. נסו לקרוא שוב או הציגו את החסם תוך שמירת הטיוטה.
+
 ## English workflow contract
 Create a saved paid campaign workflow from the initial brief. Resolve known brand data and ask only for missing information. Version 2 validates brief, platform, assets, copy and audience internally, then asks for one final client approval of the complete preview and budget. Version 1 retains its existing stage approvals. Autosave all progress. Read the current revision before every edit. The final publishing approval covers paused creation, verification and activation. Use exact approved assets and copy; disable content-changing automation. Missing accounts preserve the draft. Never infer consent, bypass a stage with a legacy tool or recreate a campaign whose publication outcome is uncertain.
 
