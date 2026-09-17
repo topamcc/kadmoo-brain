@@ -45,7 +45,7 @@ tool_hints:
 2. לא מחובר → `get_connect_links` (כרטיס), לא "לך ללוח בקרה".
 3. לפני יצירה: ויזואל מ-`list_brand_assets` / `list_studio_assets` / `generate_image` / `generate_video`.
 4. קפשן: `generate_social_caption` לפי פלטפורמה; טקסט בשפת הלקוח.
-5. תזמון: `suggest_social_best_time` → `schedule_at` · מיידי: `publish_now=true` · אחרת טיוטה.
+5. תזמון: `suggest_social_best_time` → `schedule_at` · מיידי: `publish_now=true` · אחרת טיוטה. אשר את אזור הזמן של העסק; אם הכלי תומך ב־`timezone`, העבר שם IANA מאומת. אם הוחזר `schedule_at`, העבר אותו ללא המרה נוספת והצג את `scheduled_local` עם `timezone`. בהיעדר מועד מוחלט אין להעתיק שעה מקומית חסרת אזור זמן לתזמון. זו המלצה לפי נישה והרגלי פרסום, לא הוכחה לביצועים מיטביים; ברירת המחדל של אזור הזמן וימי הפעילות ישראלית ואינה מתאימה אוטומטית לכל עסק.
 6. Meta placements: `feed` ל-1:1/4:5 · `story`/`reels` ל-9:16 בלבד.
 7. IG/TikTok דורשים מדיה · YouTube דורש וידאו · IG carousel עד 10 תמונות · האשטגים ב-IG בתגובה ראשונה כשאפשר.
 8. `create_social_post` תמיד מחזיר כרטיס אישור — אל תאשר בשם הלקוח.
