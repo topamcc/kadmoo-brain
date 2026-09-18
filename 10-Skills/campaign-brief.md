@@ -76,6 +76,12 @@ tool_hints:
 - אין לכתוב ״מוכן לפרסום״ כאשר הכלי מחזיר שגיאה, חסם או שדות חסרים, או כשאין כרטיס אישור סופי. חיבור חשבון אינו מוכנות של הקמפיין. הצג את החסם המדויק, בלי לשאול שוב על תקציב שכבר סוכם. כשיש כרטיס סופי, הפנה לכפתור שלו במקום לבקש אישור טקסטואלי נוסף.
 - בטופס לידים השתמש בקישור למדיניות הפרטיות שנמסר או אומת באתר העסק. אין להמציא קישור או להחליף אותו בעמוד הבית כדי למלא שדה חובה.
 
+## ניתוב הכנה ואישור
+
+- `launch_ad_draft` מפעיל הכנה ובדיקת מוכנות, ולא אישור כללי של מזהה טיוטה. האישור המחייב מתקבל רק אחרי בדיקת החבילה המלאה וקשור לגרסה, לתוכן, לנכסים ולתקציב המוצגים.
+- אם כרטיס ישן נכשל עם `campaign_use_workflow_approval`, אל תחזור על הקוד ללקוח ואל תנסה לפרסם בכלי אחר. קרא את אותה טיוטה והפעל את הכנת האישור העדכני דרך `launch_ad_draft`. הסבר שהפרסום לא בוצע; אין ליצור טיוטה או נכסים חדשים לשם התאוששות.
+- המלצה על פלטפורמה, מטרה, קהל או תקציב תכלול נימוק ותסומן כהצעה עד אישור הלקוח. תקציב לעולם אינו נקבע ללא אישור. הצע נכס קיים או הפקה עם מחיר לאישור לפני יצירת מדיה בתשלום. אישור הכנה אינו אישור פרסום, ואישור מילולי אינו מחליף את כרטיס החבילה הסופי.
+
 ## English workflow contract
 Create a saved paid campaign workflow from the initial brief. Resolve known brand data and ask only for missing information. Version 2 validates brief, platform, assets, copy and audience internally, then asks for one final client approval of the complete preview and budget. Version 1 retains its existing stage approvals. Autosave all progress. Read the current revision before every edit. The final publishing approval covers paused creation, verification and activation. Use exact approved assets and copy; disable content-changing automation. Missing accounts preserve the draft. Never infer consent, bypass a stage with a legacy tool or recreate a campaign whose publication outcome is uncertain.
 
