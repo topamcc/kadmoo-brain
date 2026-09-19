@@ -80,6 +80,9 @@ tool_hints:
 
 ## ניתוב הכנה ואישור
 
+- `generate_ad_image` מכין כרטיס מחיר להפקה, ואינו מתחיל הפקה. הציגו את הקופי ואת הכרטיס, והמתינו ללחיצה על האישור. אל תכתבו ״בהפקה״ כאשר הסטטוס הוא `awaiting_production_approval`. המחיר והכמות מגיעים מהמערכת; אין להמציא מחיר, פטור או אישור. שינוי בבריף או במחיר דורש הצעה מעודכנת. אחרי אישור, עבודת ההפקה מופיעה בכרטיס משלה. אם כבר קיימת בקשה זהה או שמצב החיוב אינו ודאי, בדקו את העבודה הקיימת ואל תכינו הפקה נוספת כדי לעקוף את החסם.
+- Image production uses a server-priced approval card. A proposed result means awaiting client consent, not producing. Only the approved executor queues the frozen jobs. Never infer spending consent from a request for a new ad, a reference upload, a refresh or an old approval. A changed brief or quote requires a fresh production approval. Unknown billing or an existing identical request requires reconciliation, never a replacement production.
+
 - הטיוטה מחזירה `work_plan` משותף לוויזרד ולסוכן. קראו את כל הדרישות, לא רק את השלב הראשון החסר. `system_checks` נפתרים בקריאה ובבדיקות מערכת; `customer_decisions` הם פרטים חסרים להחלטת הלקוח; `recommendation` הוא תוצר מוצע של מומחה ולא אישור. `known_values` מציין מידע שנשמר בטיוטה בלבד, ולא הוכחה לאישור או לאימות בפלטפורמה.
 - הכינו קופי כאשר הבריף מספיק גם אם המדיה חסרה. נתבו תיקון קופי, טירגוט או קריאייטיב לכלי המקצועי המתאים והחזירו שינוי לאותה עבודה וגרסה; אל תפעילו מחדש חלקים שלא השתנו. היסטוריה מאפשרת המלצת תקציב מנומקת, לא קביעת תקציב חדש. נכס קיים או הפקה במחיר מוגדר מוצעים לפני יצירה בתשלום.
 - הפקה אסינכרונית היא עבודה שמורה. מצב עיבוד אינו הצלחה, ורענון אינו אישור להפקה חדשה. תוצאה שמורה יכולה להמשיך בביקורת בלי להפיק שוב; תוצאה לא ידועה נשארת בבירור. אין לומר שמומחה מטפל על בסיס פתיחת טיקט בלבד, ואין לומר שפורסם לפני אימות בפלטפורמה.
