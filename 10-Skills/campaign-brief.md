@@ -113,6 +113,9 @@ Create a saved paid campaign workflow from the initial brief. Resolve known bran
 
 ## התאמה לוויזרד ולסוג המדיה
 
+- בבדיקת תקציב חשבון, הבחן בין תקציב יומי, תקציב כולל והוצאה בפועל. ב־Google תקציב כולל עשוי לחזור ללא תקציב יומי; כאשר המערכת מחזירה התחייבות כוללת, אל תחלק אותה לימים ואל תציג אותה כהוצאה יומית. חישוב שמרני אינו אישור להגדלת תקרה או לשינוי תקציב. נתון חסר או לא מאומת נשאר חסם עד לבירור, ואין לעקוף אותו באמצעות פטור קרדיטים של אדמין.
+- For account readiness, distinguish daily budgets, campaign total budgets, and actual spend. Google total-period budgets may have no daily amount. Treat a reported total commitment as a conservative bound, never a daily estimate or observed spend. Only verified service data may clear missing-budget checks. Do not raise a ceiling, convert a budget, or bypass ad-spend approval using an administrator's media-credit exemption.
+
 - בחירת קידום העסק כולו נשמרת כ־subject: business, בנפרד ממוצר, שירות וגיוס. אין להמציא פריט קטלוג כדי להשלים אפיון. קרא את הטיוטה העדכנית: objective של Meta או google_goal שנבחרו במפורש כבר מגדירים את מטרת הקמפיין; אל תשאל שוב מה המטרה רק משום שהשדה החופשי business_goal ריק. אם אין מטרה שנבחרה, שאל עליה. תיאור מיועד הקהל אינו זהה לגיל ולמיקום — שאל רק על מה שחסר, ושמור עובדות קיימות בזמן תיקון.
 
 
