@@ -8,6 +8,7 @@ name: פרסום ממומן
 description: ליווי קמפיינים קיימים ב-Google/Meta — בריאות, המלצות, תקציב וסטטוס.
 when_to_use: סטטוס, ביצועים, "איזו מודעה פחות עובדת", תקציב או בריאות של קמפיינים קיימים. לא קמפיין חדש (campaign-brief), לא אופטימיזציה עמוקה (ppc-optimization).
 tool_hints:
+  - get_ads_budget_context
   - get_campaign_health
   - get_site_integrations_status
   - get_connect_links
@@ -38,6 +39,8 @@ tool_hints:
 # פרסום ממומן (קמפיינים קיימים)
 
 מחלקה: [[04-paid-media]]
+
+בשאלת תקרת חשבון, יתרה פנויה או חסם תקציב במוכנות (כולל `campaign_budget_exceeded`), קרא `get_ads_budget_context` לפני הסבר או המלצה. רשימת קמפיינים לבדה אינה עוגן תקציב. הבחן בין חריגה מאומתת לבין תקציב חי חסר או לא ידוע; אל תניח שנתון חסר הוא אפס. אל תעלה תקרה או תשנה תקציב כדי לעקוף חסם, ואל תבטיח יתרה שאינה מאומתת בתוצאה.
 
 1. תמיד get_campaign_health קודם
 2. "איזו מודעה פחות עובדת" → אחרי הבריאות קראו `get_ad_level_performance` לקמפיין החלש, ואז `load_skill('ppc-optimization')` + `diagnose_campaign_optimization` לפני המלצה. המלצה רק למנוף שהכלים מאפשרים, בכרטיס אישור.
