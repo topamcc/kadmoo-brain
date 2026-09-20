@@ -15,6 +15,7 @@ tool_hints:
   - get_site_info
   - resolve_offer_assets
   - list_brand_assets
+  - list_studio_assets
   - list_site_keywords
   - get_crm_leads_summary
   - get_google_ads_summary
@@ -49,6 +50,8 @@ tool_hints:
 מחלקה: [[04-paid-media]] · קריאייטיב: [[03-creative]] · היררכיה: [[agency-hierarchy]] · בטיחות: [[ppc-write-safety-gates]] · API: [[google-ads-api-runtime-2026]] · [[meta-marketing-api-runtime-2026]]
 
 ## זרימה
+
+- לבחירת תמונה או סרטון קיימים מספריית הקמפיין, קרא `list_studio_assets`. ספר המותג (`list_brand_assets`) אינו כל הספרייה; תוצאה שמכילה רק לוגו אינה מוכיחה שאין קריאייטיב קיים. לוגו אינו מודעה מוכנה. לאחר בחירת נכס קיים או העלאה, שמור את הכתובת, סוג המדיה והמיקום באותו `CampaignSpec` ובגרסה העדכנית באמצעות `update_ad_draft`; אין צורך בהפקה חדשה או במסלול תצוגה ישן. בחירה והעלאה אינן אישור לחיוב. אם הוצעו בחירה, העלאה או יצירה, בקש הצעת מחיר ואישור הפקה רק כשהלקוח בחר יצירה בתשלום.
 
 - בחסם תקציב של בדיקת המוכנות, כולל `campaign_budget_exceeded`, קרא `get_ads_budget_context` לפני הסבר או המלצת תקציב. השתמש בתקרת החשבון, בתקציבים החיים וביתרה שהכלי מחזיר; הבחן בין חריגה מאומתת לבין תקציב חי חסר או לא ידוע. נתון חסר אינו אפס. אל תעלה תקרה, תשנה תקציב או תבטיח יתרה פנויה כדי לעקוף חסם.
 
