@@ -26,8 +26,8 @@ tool_hints:
   - list_ad_drafts
   - launch_ad_draft
   - record_creative_feedback
-  - create_campaign_draft
-  - activate_campaign
+  - get_campaign_draft
+  - update_ad_draft
   - get_creative_performance
   - list_brand_assets
   - list_site_catalog

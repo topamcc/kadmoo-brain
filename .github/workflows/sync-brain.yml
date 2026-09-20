@@ -19,7 +19,7 @@ jobs:
       - name: Lint vault
         run: node scripts/lint-vault.mjs
       - name: Verify sync result guard
-        run: node --test scripts/assert-brain-sync.test.mjs
+        run: node --test scripts/assert-brain-sync.test.mjs scripts/tool-catalog.test.mjs
 
   sync:
     runs-on: ubuntu-latest

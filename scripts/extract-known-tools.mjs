@@ -1,21 +1,12 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { readSourceCatalog } from "./tool-catalog.mjs";
 
-const appRoot = join(import.meta.dirname, "..", "..", "Kadmoo App 2026");
-const sources = [
-  join(appRoot, "lib", "services", "ai-assistant", "tool-registry.ts"),
-  join(appRoot, "lib", "services", "onboarding", "sales-agent.ts"),
-];
-const names = new Set();
-for (const file of sources) {
-  const text = await readFile(file, "utf8");
-  for (const m of text.matchAll(/^\s+name: "([a-z0-9_]+)"/gm)) {
-    names.add(m[1]);
-  }
-}
-const sorted = [...names].sort();
+const appRoot = process.argv[2] || process.env.KADMOO_APP_ROOT;
+if (!appRoot) throw new Error("Pass the application checkout matching the release, or set KADMOO_APP_ROOT");
+const catalog = await readSourceCatalog(appRoot);
 await writeFile(
   join(import.meta.dirname, "known-tools.json"),
-  `${JSON.stringify(sorted, null, 2)}\n`
+  `${JSON.stringify(catalog, null, 2)}\n`
 );
-console.log(`Wrote ${sorted.length} tools`);
+console.log(`Wrote ${catalog.tools.length} source-derived tool definitions`);

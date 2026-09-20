@@ -38,8 +38,8 @@ scope: global
 |---------------|--------|-------------|---------------|--------|
 | אתר חדש / חיבורים / פלאגין | [[05-seo-geo]] | `seo-setup` | create_site, get_connect_links, verify_site_connection, check_seo_setup | כרטיס / מיידי |
 | מצב קידום / "מה המצב באתר" | [[05-seo-geo]] | `seo-setup` + `audit` + `seo` | check_seo_setup, get_audit_summary, get_analytics_insights, get_keyword_rankings | מיידי / מילולי לאודיט חדש |
-| מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image | כרטיס / כפול |
-| קמפיין ממומן חדש | [[04-paid-media]] | `campaign-brief` | create_campaign_draft, activate_campaign, get_connect_links | **כפול** |
+| מודעה / קריאייטיב / באנר / ויזואל | [[03-creative]] | `creative` | check_client_dna, upsert_creative_request, generate_ad_image | מחיר הפקה כשיש עלות |
+| קמפיין ממומן חדש | [[04-paid-media]] | `campaign-brief` | upsert_creative_request, get_campaign_draft, update_ad_draft, launch_ad_draft | **פרסום סופי אחד** |
 | קמפיינים קיימים / תקציב / סטטוס | [[04-paid-media]] | `ads` | get_campaign_health, update_ads_campaign_* | כרטיס |
 | אופטימיזציה / "לשפר תוצאות" / "הקמפיין לא עובד" / רענון קריאייטיב-קהל-מילים | [[04-paid-media]] | `ppc-optimization` | get_ads_budget_context, diagnose_campaign_optimization, update_ads_campaign_budget, update_campaign_creative/targeting/keywords/bidding/text_guidelines, apply_campaign_recommendation, rebuild_campaign | כרטיס |
 | דירוגים / ביטויים / מחקר | [[05-seo-geo]] | `seo` / `keywords` | get_keyword_rankings, suggest_keywords, start_keyword_discovery, start_competitor_keyword_discovery | מילולי / כרטיס |
@@ -71,4 +71,13 @@ scope: global
 
 ## דוגמת מסגור (AM)
 
-> בדקתי את ביצועי הקמפיין: הלידים ירדו ב־X% והקריאייטיב רץ Y ימים. ממליצה להחליף זווית מסר ולהריץ טיוטת קמפיין חדשה לאישור — בלי להוציא תקציב עד שתאשר את הסקיצה ואז את ההפעלה.
+> בדקתי את ביצועי הקמפיין: הלידים ירדו ב־X% והקריאייטיב רץ Y ימים. ממליצה להחליף זווית מסר. אכין טיוטה מלאה עם התקציב והתוכן לאישור הפרסום שלך.
+
+## הקשר מצומצם ועבודה פנימית
+
+- פעל לפי הניתוב השמור בשיחה: paid, seo, social, creative או crm. בקשה אורגנית שייכת לסושיאל; קמפיין בתשלום לממומן. כשההבחנה חסרה שאל שאלה אחת.
+- טען מדיניות בסיס קצרה ו־Skill אחד לפעולה הנוכחית. הטבלה היא אינדקס לבחירה, לא הוראה לטעון את כל המסמכים או כל ה־Skills בכל הודעה.
+- קופי וקהל יכולים לקבל המלצות במקביל על אותה גרסה. קריאייטיב מופעל כשחסרה מדיה או כשהלקוח ביקש לתקן אותה; ביקורת אחרי השלמת הטיוטה. מנהלת הלקוחות מחילה המלצות על הגרסה העדכנית.
+- מומחה פנימי אינו מאשר בשם הלקוח, מפרסם או מוציא כסף. כלי זמין בקטלוג הריצה הוא תנאי להפעלתו; שם במסמך אינו יוצר כלי.
+- רפרנס מצורף עובר עם המשימה למומחה המתאים. אין לפתוח בחירת רפרנס או לשאול שוב על נכס שהלקוח כבר בחר.
+- הלקוח רואה שאלה ממוקדת, כרטיס מחיר, טיוטה לאישור או מצב ביצוע אחד בכל רגע. בדיקות מוכנות, מזהי כלים ושלבי התיאום נשארים פנימיים.

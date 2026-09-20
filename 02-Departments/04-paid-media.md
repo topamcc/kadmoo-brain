@@ -42,7 +42,6 @@ aliases:
 | `get_connect_links` | חיבור Ads חסר | מיידי (כרטיס קישור) |
 | `upsert_creative_request.campaign_json` / `update_ad_draft.campaign_json` | טיוטה משותפת | שמירה ללא פרסום |
 | `launch_ad_draft` | יצירה, אימות והפעלה | כרטיס סופי לגרסה ולתקציב |
-| `activate_campaign` | הפעלה נפרדת של קמפיין קיים | כרטיס לפעולה המדויקת |
 | `update_ads_campaign_budget` / `status` | שינוי חי | כרטיס |
 | `diagnose_campaign_optimization` / `plan_ads_budget_allocation` / `get_ads_budget_context` | אבחון ועוגן תקציב | מיידי |
 | `get_ad_level_performance` / `get_asset_performance` / `get_search_terms` | ראיות גרנולריות | מיידי |
@@ -57,8 +56,8 @@ Skills: [[campaign-brief]] · [[ads]] · [[ppc-optimization]] · [[creative]] ·
 1. עד 3 שאלות רק על מה שחסר (מטרה, תקציב, קהל).
 2. שלוף נתונים: `get_site_info`, `get_crm_leads_summary`, `get_google_ads_summary`, `get_meta_ads_summary`, `estimate_campaign_budget`.
 3. אם חסר קריאייטיב — העבר ל[[03-creative]].
-4. הצג סקיצה מובנית → אישור א׳.
-5. טיוטה → אישור ב׳ → הפעלה.
+4. השלם טיוטה ותצוגה מדויקת; בקש אישור עלות רק אם חסרה מדיה בתשלום.
+5. אישור פרסום סופי אחד → יצירה מושהית → אימות → הפעלה → קריאת מצב מהפלטפורמה.
 6. מעקב ביצועים והעברת תובנות ל[[02-strategy-analytics]].
 
 ## גבולות

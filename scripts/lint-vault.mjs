@@ -5,6 +5,7 @@
  */
 import { readdir, readFile } from "node:fs/promises";
 import { join, relative } from "node:path";
+import { readSourceCatalog, sources } from "./tool-catalog.mjs";
 
 const ROOT = join(import.meta.dirname, "..");
 const SYNCABLE = [
@@ -96,17 +97,30 @@ function asList(value) {
 }
 
 let knownTools = null;
+let catalogError = null;
 try {
   const raw = await readFile(join(import.meta.dirname, "known-tools.json"), "utf8");
-  knownTools = new Set(JSON.parse(raw));
-} catch {
-  knownTools = null;
+  const catalog = JSON.parse(raw);
+  if (catalog.version !== 1 || !Array.isArray(catalog.tools) ||
+      sources.some((file) => !/^[a-f0-9]{64}$/.test(catalog.sourceHashes?.[file] || ""))) {
+    throw new Error("Regenerate known-tools.json from the application release checkout");
+  }
+  if (process.env.KADMOO_APP_ROOT) {
+    const current = await readSourceCatalog(process.env.KADMOO_APP_ROOT);
+    if (JSON.stringify(current) !== JSON.stringify(catalog)) {
+      throw new Error("Tool catalog differs from application source; regenerate for this release");
+    }
+  }
+  knownTools = new Set(catalog.tools);
+} catch (error) {
+  catalogError = error.message;
 }
 
 const strict = process.argv.includes("--strict");
 const files = await walk(ROOT);
 const notes = [];
 const errors = [];
+if (catalogError) errors.push(`Tool catalog: ${catalogError}`);
 const warnings = [];
 
 for (const file of files) {
@@ -181,10 +195,16 @@ for (const n of syncable) {
       warnings.push(`${n.rel}: skill body is ${bodyLines} lines (budget ${SKILL_BODY_MAX_LINES})`);
     }
     const hints = asList(n.data.tool_hints);
+    if (approved && n.data.scope === "site") {
+      errors.push(`${n.rel}: site-scoped skills are disabled until runtime scope enforcement is verified`);
+    }
     if (knownTools) {
       for (const hint of hints) {
         if (!knownTools.has(hint)) {
-          warnings.push(`${n.rel}: unknown tool_hint "${hint}"`);
+          (approved ? errors : warnings).push(`${n.rel}: unknown tool_hint "${hint}"`);
+        }
+        if (approved && ["create_campaign_draft", "activate_campaign"].includes(hint)) {
+          errors.push(`${n.rel}: legacy campaign tool_hint "${hint}" is not allowed for new workflows`);
         }
       }
     }
