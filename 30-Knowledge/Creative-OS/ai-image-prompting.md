@@ -7,7 +7,7 @@ when_to_use: "פרומפט לתמונת מודעה או נכס סטודיו"
 scope: global
 department: creative
 ---
-
+https://meet.google.com/gbi-fqtr-pne
 # פרומפט תמונה
 
 Pipeline: [[pipeline-stages]] · ויזואל: [[visual-typography-protocol]] · סקיל: [[creative]]
