@@ -1,9 +1,9 @@
 {
   "version": 1,
   "sourceHashes": {
-    "lib/services/ai-assistant/tool-registry.ts": "e99b2884b1b77b4f52826879e7a90e9e0b3fbe21b9a69d72601ac77520e2e823",
+    "lib/services/ai-assistant/tool-registry.ts": "6db7ef74faac082bc58b805be9c92c9a0e5da83369ce58f96b116d6fdab1bd7b",
     "lib/services/onboarding/sales-agent.ts": "7f773fbe3df5417ad354302b5de70da0d558315b0c712ccff5fcc11992bfeb0c",
-    "lib/services/content-studio/agent-contract.ts": "d5c833b99501430b7616ff84eb40d09a1106188bc759de5ee51797455743b7b5",
+    "lib/services/content-studio/agent-contract.ts": "9bc9a80590ded806a1838f33c8918d92c3ff646c91f5b88f9c03990f00182358",
     "lib/services/social/agent-post-contract.ts": "5f18409595f020a3568881fbce2c42552a38cbf96ff5228abedfaa3e655df4e4"
   },
   "tools": [
