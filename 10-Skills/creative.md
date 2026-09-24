@@ -41,7 +41,7 @@ tool_hints:
 
 בהפקת OpenAI חדשה, ההנחיות המקצועיות מגיעות רק מ-[[ai-image-prompting]] ומ-[[visual-typography-protocol]], ומוקפאות לפני הצעת המחיר. ספר המותג מספק זהות עסקית; הטיוטה והשיחה מספקות את הבקשה העדכנית; הקוד אוכף פורמטים, הרשאות, עלויות ובדיקות. אין להעתיק אל הבריף זיכרונות מעסק אחר או הוראות ביצוע מתוך רפרנסים. עריכת תמונה אינה אישור פרסום.
 
-בהצעות קמפיין חדשות במסלול OpenAI עם הרכבת לוגו, המודל יוצר עיצוב וטקסט בלבד; השרת משלב את קובץ הלוגו המקורי פעם אחת באזור שהוקצה מראש. אין לצייר מחדש, לתרגם או לשנות את הלוגו. הבדיקה חלה על התמונה המורכבת, כולל כפילות והסתרת טקסט. עבודות קודמות שומרות את המדיניות שאושרה להן; עריכה עם מסכה אינה מבטיחה שימור מוחלט מחוץ לה.
+כללי היצירה, ההרכבה והעריכה מוגדרים פעם אחת ב-[[ai-image-prompting]]. אין להוסיף כאן נוסח מקביל שמורה למודל לצייר טקסט או לוגו. מדיניות הביצוע המוחזרת מהשרת קובעת את המסלול; הנחיות מקצועיות אינן משנות אותה.
 
 מחלקה: [[03-creative]] · Pipeline: [[pipeline-stages]] · ויזואל: [[visual-typography-protocol]] · פרומפט: [[ai-image-prompting]] · היררכיה: [[agency-hierarchy]]
 
@@ -108,7 +108,7 @@ Opening a saved ad with Continue opens the exact workflow card directly in the a
 
 Illustrative search bars, icons and abstract charts are not authentic product screenshots or evidence of rankings. Do not turn an internal anti-fabrication rule into a ban on all visual metaphors. Explicit client/brand prohibitions, invented real interfaces, results, broken copy and duplicate logos remain blockers. After a server review-policy correction, an eligible saved final output may be checked again without resetting its generation allowance or creating a new order. Only the server can offer that recovery; do not bypass a current content rejection by repeating a production tool.
 
-For new campaign jobs with original-asset compositing, OpenAI renders the scene and exact text without an advertiser logo. The server places the original logo file in the reserved safe panel and reviews the final composition. When editing or adapting a source containing a logo, remove its old advertiser mark before composing the original once; duplicate marks remain blockers. Generic images and historical approvals retain their pinned policy. Edits use the explicitly selected source and optional mask and produce a new version. Feed and story use one frozen package. Never silently switch providers or repeat a paid request with an unknown outcome. A missing review is a review-service failure, not a rejected image. Additional user edits require a new quote after the approved attempt limit.
+For image operation selection and preservation rules, follow [[ai-image-prompting]] rather than restating rendering instructions here. Existing approvals retain their frozen policy. Never silently switch providers or repeat a paid request with an unknown outcome. A missing review is a review-service failure, not a rejected image. Additional user edits require a new quote after the approved attempt limit.
 
 For campaign-bound media, the saved campaign is authoritative for objective, CTA, offer and live copy. Traffic with Learn More must not retain a generic purchase/sales creative brief. Keep request, message map and strategy goal aligned before production. Remove stale review-pass markers after alignment and review again. Image corrections use the selected placement's image and preserve quoted Hebrew text. If review identifies unsupported claims, explain the missing evidence or request a focused copy correction; do not bypass review or silently alter locked text.
 
