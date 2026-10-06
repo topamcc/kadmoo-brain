@@ -1,7 +1,7 @@
 {
   "version": 1,
   "sourceHashes": {
-    "lib/services/ai-assistant/tool-registry.ts": "6db7ef74faac082bc58b805be9c92c9a0e5da83369ce58f96b116d6fdab1bd7b",
+    "lib/services/ai-assistant/tool-registry.ts": "a34441a98db6cf8201d20a3261b1963f170158cbc7bbba7a9d80402d72192f89",
     "lib/services/onboarding/sales-agent.ts": "7f773fbe3df5417ad354302b5de70da0d558315b0c712ccff5fcc11992bfeb0c",
     "lib/services/content-studio/agent-contract.ts": "9bc9a80590ded806a1838f33c8918d92c3ff646c91f5b88f9c03990f00182358",
     "lib/services/social/agent-post-contract.ts": "5f18409595f020a3568881fbce2c42552a38cbf96ff5228abedfaa3e655df4e4"
@@ -25,6 +25,7 @@
     "check_site_plugin_status",
     "complete_ai_secretary_purchase",
     "consult_campaign_specialist",
+    "consult_social_specialist",
     "create_campaign_draft",
     "create_gbp_post",
     "create_landing_page",
@@ -83,6 +84,7 @@
     "get_reviews_status",
     "get_search_console_data",
     "get_search_terms",
+    "get_seo_impact",
     "get_service_packages",
     "get_site_analytics",
     "get_site_budget_summary",
@@ -169,6 +171,7 @@
     "update_lead_status",
     "update_site_content_settings",
     "upsert_creative_request",
+    "upsert_social_post",
     "verify_site_connection",
     "web_search"
   ]
