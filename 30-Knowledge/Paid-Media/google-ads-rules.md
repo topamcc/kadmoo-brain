@@ -70,3 +70,7 @@ department: paid-media
 - סדר ערך: מותג Search > שאילתות כוונה גבוהה > רימרקטינג > PMax. PMax מקבל תקציב רק אחרי שהזולים מוצו — לא כקמפיין ראשון, לא על מעקב חלש, לא על תקציב זעיר.
 - החרגות מותג ברמת חשבון, אחרת PMax גונב את קרדיט המותג.
 - בודקים איכות לידים של PMax מול Search ב-CRM. אם נסגרים בחצי מהקצב — PMax זול בפיקסל ויקר במציאות.
+
+
+### Wizard review and explicit paused creation
+Message and audience are seeded from existing campaign copy and brand information when available, preserving manual choices. Complete missing message, audience and budget in the earlier editing steps. Final review is read-only with edit links and four distinct actions: save draft, request client review, publish, or create paused. Saving a draft or requesting client review never creates provider campaigns. Explicit create-paused approval uses the canonical revision-bound publisher, checks authorization, media and budget, creates and verifies the provider campaign as paused, and must never invoke activation. Later activation requires a separate explicit authorized action.
