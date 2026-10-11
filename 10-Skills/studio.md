@@ -84,6 +84,9 @@ tool_hints:
 
 ## המחשות בתנועה
 
+- ניסיון חוזר להמחשת וידאו שנכשלה משתמש ב־`retry_asset` ובמזהה הנכס מהגרסה החיה. מציגים אישור עם אפס חיוב לקוח נוסף. רק ההמחשה שנבחרה משוחזרת; אין לשלוח מחדש בקשה שמצבה לא ידוע ואין לשנות רעיון במסגרת תיקון תקלה. יש לייצא ולאשר מחדש לאחר התיקון.
+- Use `retry_asset` with the failed video asset ID from the live revision. Propose approval at zero additional customer credits. Recover only the selected illustration, never repeat an unknown submission or change its concept as a fault retry. Export and approve the corrected revision afterward.
+
 - בתיקון ניתן להזיז המחשה קיימת על ציר הזמן בלי ליצור אותה שוב. כותרת דובר ומעבר נושא משתמשים בטקסט שאושר; אין להסיק שם או תפקיד שלא נאמרו. שינוי תזמון או עיצוב מחייב ייצוא ואישור לגרסה החדשה.
 - Corrections can move an existing illustration on the timeline without regenerating it. Speaker titles and section transitions use approved text; never infer an unspoken name or role. Timing or design changes require export and approval of the new revision.
 
