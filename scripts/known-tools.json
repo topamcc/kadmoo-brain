@@ -1,9 +1,9 @@
 {
   "version": 1,
   "sourceHashes": {
-    "lib/services/ai-assistant/tool-registry.ts": "a34441a98db6cf8201d20a3261b1963f170158cbc7bbba7a9d80402d72192f89",
+    "lib/services/ai-assistant/tool-registry.ts": "40bf42b9da7235c4ba6bbba657275f1f943a993af13a90eca7e9e682344f5079",
     "lib/services/onboarding/sales-agent.ts": "7f773fbe3df5417ad354302b5de70da0d558315b0c712ccff5fcc11992bfeb0c",
-    "lib/services/content-studio/agent-contract.ts": "9bc9a80590ded806a1838f33c8918d92c3ff646c91f5b88f9c03990f00182358",
+    "lib/services/content-studio/agent-contract.ts": "df171250efbf4fa99d241127f07179872b8c32735cec398d3d2c8c865efdcdd0",
     "lib/services/social/agent-post-contract.ts": "5f18409595f020a3568881fbce2c42552a38cbf96ff5228abedfaa3e655df4e4"
   },
   "tools": [
@@ -51,6 +51,7 @@
     "generate_video",
     "get_ad_level_performance",
     "get_ads_budget_context",
+    "get_ads_connections",
     "get_ai_secretary_info",
     "get_analytics_insights",
     "get_articles_status",
@@ -127,6 +128,7 @@
     "prepare_content_plan",
     "prepare_content_studio_draft",
     "prepare_content_studio_render",
+    "present_ad_studio",
     "preview_ad_creative",
     "propose_product_setting_change",
     "publish_landing_page",
