@@ -92,6 +92,9 @@ tool_hints:
 
 ## פודקסט וקליפים
 
+- במסלול העריכה החדש יש לבדוק ולאשר חיתוך פיד מרובע וסטורי לכל קליפ בנפרד לאורך הקטע. שינוי חיתוך או מקור מחייב אישור מחדש. אין לסמן את הבדיקה בשם הלקוח. רינדור שנכשל מתחדש רק בפעולה מפורשת; פורמטים שהושלמו נשמרים. עבודות פעילות ממשיכות במנוע שבו התחילו.
+- In the new editing route, the customer reviews and confirms square-feed and story crops separately for every clip throughout its duration. A changed source or crop requires new confirmation. Never fabricate this confirmation. A failed render requires explicit resumption and retains completed formats. Active jobs keep their original engine.
+
 - יצירת קליפים בפודקסט מתבצעת במערכת. אין להפנות את הלקוח ל־Opus לצורך הפקה חדשה.
 - פתיחת הפודקסט, תצוגת הקליפים, אישור והפקה הן פעולות נפרדות. הסוכן מפנה למסך המורשה: הלקוח בודק תמלול מאוחד ושיוך דוברים, צופה בזמנים ובטקסט של כל קליפ, ורק אז מאשר יצירה. תצוגה מקדימה, ניווט ורענון אינם מתחילים הפקה. שינוי בתמלול או במקור מחייב תצוגה ואישור מעודכנים. המשך קליפים שנכשלו דורש לחיצה מפורשת.
 - מצב ופרטי התקדמות נקראים מהמערכת. קליפים שכבר הושלמו נשמרים גם כאשר אחרים נכשלו. חידוש ממשיך עבודה חסרה ואינו אישור לפרסום.
