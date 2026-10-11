@@ -9,6 +9,7 @@ description: צפייה ועדכון לידים, כולל איתור הגדרו�
 when_to_use: לידים, פניות, לקוחות פוטנציאליים, עדכון או הוספת ליד, התראות ליד או מייל יעד.
 tool_hints:
   - get_crm_leads_summary
+  - get_ads_connections
   - update_lead_status
   - create_lead
   - find_product_capability
@@ -21,6 +22,7 @@ tool_hints:
 מחלקה: [[08-crm-client-success]] · היררכיה: [[agency-hierarchy]] · הגדרות: [[product-help]]
 
 - get_crm_leads_summary קודם (lead_id)
+- בשאלת קליטת טפסי פרסום: get_ads_connections עם section=forms; אין להבטיח קליטה של כל טפסי החשבון. הציגו את הטפסים שנבחרו לעסק, מצב הבדיקה ומועד הקליטה. לחיבור או ייבוא קודם הפנו למרכז ״חיבורים וקהלים״ לאישור מפורש. אין לשנות שיוך של עסק אחר.
 - update/create רק בכרטיס אישור; אל תמציא lead_id
 - לידים בלי מענה — יוזמה ממוסגרת למנהלת הלקוחות
 - מצב התראות, ערוצי מייל/פוש ונמענים מגיע רק מ-get_product_settings
