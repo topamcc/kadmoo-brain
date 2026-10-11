@@ -44,6 +44,15 @@ tool_hints:
 
 ## עבודת וידאו קיימת
 
+- פעולות בעורך הגרסאות משתמשות ב־`edit_operation`: שמירה (`save`), ייצוא (`export`), ביטול (`cancel`) ואישור (`approve`). כולן מתחילות בהצעה עם הגרסה החיה והחתימה שלה. אין להמציא אישורי חיתוך ב־`reviewedFrames`; שינוי חיתוך ישיר מחייב בדיקה חדשה של הלקוח. תוצאה חלקית, לרבות המחשה שהושמטה או כשל בתכנון Motion, דורשת בחירה מפורשת של הלקוח ב־`accept_partial`; אין להסיק אותה מאישור קודם.
+- Version editor operations use `edit_operation`: `save`, `export`, `cancel`, or `approve`, with the live revision and its signature. Never fabricate `reviewedFrames`: a changed direct crop requires a fresh client review. A partial result, including omitted illustrations or failed Motion planning, requires explicit client acceptance through `accept_partial`; an earlier approval does not imply acceptance.
+- לקליפ פודקאסט קיים, קרא את `podcastClips` והצע פתיחה בעורך באמצעות `prepare_content_studio_draft` עם `podcast_clip_id` ו־`draft_json={}`. הפעולה דורשת אישור, שומרת את המקור והתוצרים הקודמים ואינה מפיקה, מחייבת או מפרסמת. לאחר הפתיחה קרא את `recordingId` שהוחזר והמשך באותן פעולות גרסה. אין לשלב מזהה קליפ עם מזהה הקלטה או פריט באותה בקשה.
+- For an existing podcast clip, read `podcastClips` and propose opening the shared editor using `prepare_content_studio_draft`, `podcast_clip_id`, and `draft_json={}`. Opening requires approval, preserves the source and previous outputs, and does not generate, charge, or publish. Read the returned `recordingId` before continuing with revision operations. Do not combine a clip ID with a recording or item ID in the same request.
+- עריכה בעלת גרסאות זמינה רק לפי `editorAvailable` בקריאה החיה. עם `recording_id`, קוראים את `editVersions` ואת הגרסה העדכנית לפני תיקון. `prepare_content_studio_draft` עם `edit_json`, `expected_revision` ו־`draft_json={}` מציע לשמור תיקון בלבד; אינו שומר לפני אישור. יש לשמור את המקור, מזהי הנכסים והגדרות העיבוד, ולשנות רק מה שהלקוח ביקש. שמירת תיקון מבטלת את תוקף האישור הקודם. הלקוח צופה, מייצא ומאשר את כל התוצרים בסטודיו. שחזור יוצר גרסה חדשה ושומר את ההיסטוריה.
+- Versioned editing is available only when the live reader reports `editorAvailable`. Read `editVersions` with `recording_id` before proposing `edit_json` and `expected_revision` through `prepare_content_studio_draft` (use `draft_json={}`). Never mutate before approval. Preserve source, asset IDs and processing choices. The client reviews, exports and approves all selected outputs in Studio. Saving invalidates the prior approval; restoring creates a new version without deleting history.
+- במסלול החדש פיד ריבועי וסטורי משתמשים בחיתוך ישיר ללא השלמת רקע. בחן את הפריים עם הלקוח; אין להבטיח שהדובר או המוצר יישארו בפריים רק על סמך יחס התמונה. מקצועי מלא הוא ברירת המחדל לעבודות חדשות; המראה המקורי נשמר, ושינוי מראה או שיפור וידאו דורשים בחירה מפורשת. הזמינות, הבחירות והמחיר נקראים מהמערכת. אין להוסיף מחיר בגלל Motion ואין להבטיח זמן סיום קבוע.
+- Square feed and story use direct crop without background padding in the new route. Review framing with the client; aspect ratio alone does not verify subject visibility. New work defaults to full professional editing while preserving appearance. Appearance changes and video enhancement require explicit selection. Read availability, settings and price live; Motion does not justify an extra fee or a promised completion time.
+
 - קודם `get_content_studio_state`: המשך מאותה עבודה וקרא את גרסת הטיוטה לפני תיקון. שמור נתונים קיימים ושאל רק על פרטים חסרים.
 - `prepare_content_studio_draft` מציע שמירת טיוטה לאחר אישור. בעריכה העבר את `item_id` ואת `expected_updated_at` שקיבלת בקריאה. שמירה אינה אישור הפקה בתשלום או פרסום.
 - הכנה לצילום: כתוב שאלות ותסריט לפי הבריף ועובדות העסק, ושמור אותם ב־`recordingGuide.questions` ו־`recordingGuide.script` בתוך `draft_json`. שאל רק על מידע חסר. ההנחיות מופיעות לאותו לקוח לפני צילום באותה עבודה; זה אינו ייצור קריינות. בתיקון תסריט שמור את ההגדרות, הפורמטים והנכסים האחרים. לאחר השמירה החזר את קישור העבודה המדויק, הכולל את מזהה הפריט, כדי שהלקוח ימשיך בהקלטה או בהעלאה.
@@ -75,13 +84,22 @@ tool_hints:
 
 ## המחשות בתנועה
 
-- הפקה חדשה משתמשת בתכנון ההמחשות העדכני; צפייה בתוצר ישן אינה משדרגת אותו. אין להבטיח מספר המחשות קבוע: הן תלויות בדיבור ובמקום פנוי לפרזנטור ולכתוביות. בהכנה לרשתות בחר פורמטים אמיתיים מהטיוטה החיה, שמור בחירות קיימות, והסבר ששמירת כל הפריים יכולה להשתמש ברקע מטושטש. הדגשת מילים מדויקת תלויה בתזמון מאומת; כשאינו זמין משתמשים בכתוביות משפט קריאות. אין להציג בדיקה מקומית או בדיקה עם מודל מדומה כאימות של הסרטון החי.
+- ניסיון חוזר להמחשת וידאו שנכשלה משתמש ב־`retry_asset` ובמזהה הנכס מהגרסה החיה. מציגים אישור עם אפס חיוב לקוח נוסף. רק ההמחשה שנבחרה משוחזרת; אין לשלוח מחדש בקשה שמצבה לא ידוע ואין לשנות רעיון במסגרת תיקון תקלה. יש לייצא ולאשר מחדש לאחר התיקון.
+- Use `retry_asset` with the failed video asset ID from the live revision. Propose approval at zero additional customer credits. Recover only the selected illustration, never repeat an unknown submission or change its concept as a fault retry. Export and approve the corrected revision afterward.
+
+- בתיקון ניתן להזיז המחשה קיימת על ציר הזמן בלי ליצור אותה שוב. כותרת דובר ומעבר נושא משתמשים בטקסט שאושר; אין להסיק שם או תפקיד שלא נאמרו. שינוי תזמון או עיצוב מחייב ייצוא ואישור לגרסה החדשה.
+- Corrections can move an existing illustration on the timeline without regenerating it. Speaker titles and section transitions use approved text; never infer an unspoken name or role. Timing or design changes require export and approval of the new revision.
+
+- הפקה חדשה משתמשת בתכנון ההמחשות העדכני; צפייה בתוצר ישן אינה משדרגת אותו. אין להבטיח מספר המחשות קבוע: הן תלויות בדיבור ובמקום פנוי לפרזנטור ולכתוביות. בהכנה לרשתות בחר פורמטים אמיתיים מהטיוטה החיה ושמור בחירות קיימות. פיד מרובע וסטורי מחייבים חיתוך ישיר ללא השלמת רקע; בפיד 4:5 ובפורמט רוחבי אפשר לשמור את כל הפריים עם רקע מטושטש, צבע מותג או תמונה שהועלתה. הדגשת מילים מדויקת תלויה בתזמון מאומת; כשאינו זמין משתמשים בכתוביות משפט קריאות. אין להציג בדיקה מקומית או בדיקה עם מודל מדומה כאימות של הסרטון החי.
 
 - בחירת המחשות נשמרת בטיוטה ונקראת מהמצב החי. שינוי שלה דורש את אישור הטיוטה הרגיל; אין לדרוס בחירה קיימת או להבטיח זמינות לפני קריאה. לאחר אישור ההפקה ההמחשות נבחרות אוטומטית לפי מה שנאמר, ללא אישור לכל סצנה.
 - אין להמציא נתונים או להפוך שאלת מראיינת לקביעה. כשל בהמחשה עשוי להסתיים בווידאו תקין עם הודעת השמטה; אין לדווח על הצלחת ההמחשה בלי תוצר מאומת.
 - בפודקסט מפנים למסך המורשה לבחירה לכל הקליפים או ליצירת גרסה מונפשת לקליפ קיים. הפעולה אינה משנה את הסרטון הראשי ואינה מאשרת פרסום. המחיר והזמינות נקראים מהמערכת; אין להוסיף חיוב המחשות נפרד.
 
 ## פודקסט וקליפים
+
+- במסלול העריכה החדש יש לבדוק ולאשר חיתוך פיד מרובע וסטורי לכל קליפ בנפרד לאורך הקטע. שינוי חיתוך או מקור מחייב אישור מחדש. אין לסמן את הבדיקה בשם הלקוח. רינדור שנכשל מתחדש רק בפעולה מפורשת; פורמטים שהושלמו נשמרים. עבודות פעילות ממשיכות במנוע שבו התחילו.
+- In the new editing route, the customer reviews and confirms square-feed and story crops separately for every clip throughout its duration. A changed source or crop requires new confirmation. Never fabricate this confirmation. A failed render requires explicit resumption and retains completed formats. Active jobs keep their original engine.
 
 - יצירת קליפים בפודקסט מתבצעת במערכת. אין להפנות את הלקוח ל־Opus לצורך הפקה חדשה.
 - פתיחת הפודקסט, תצוגת הקליפים, אישור והפקה הן פעולות נפרדות. הסוכן מפנה למסך המורשה: הלקוח בודק תמלול מאוחד ושיוך דוברים, צופה בזמנים ובטקסט של כל קליפ, ורק אז מאשר יצירה. תצוגה מקדימה, ניווט ורענון אינם מתחילים הפקה. שינוי בתמלול או במקור מחייב תצוגה ואישור מעודכנים. המשך קליפים שנכשלו דורש לחיצה מפורשת.
