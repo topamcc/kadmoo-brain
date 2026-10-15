@@ -42,6 +42,11 @@ tool_hints:
 
 # סטודיו תוכן
 
+## הדמיות פרסום באונבורדינג
+
+- הדמיית אונבורדינג משתמשת בתהליך היצירה של הסטודיו, אך אינה אישור לפרסום או לחיוב. קרא את המצב החי; כאשר ההפקה רצה או נכשלה, אל תציג אותה כמוכנה. הפנה לתצוגת ההדמיה באונבורדינג לבדיקת מצב, השוואת גרסאות ושליחת תיקון כללי או אזורי. המכסה והגרסה הקובעת מגיעות מהמערכת; אין להמציא מכסה, לעקוף אותה באמצעות יצירה מחדש, או להפעיל כלי תמונה בתשלום במקום ההדמיה.
+- Onboarding previews reuse Studio production without authorizing publication or client charges. Read live status; running or failed production is not ready. Use the onboarding preview for status, version comparison and explicit general or regional revision requests. Read quota and current version from the application; never invent an allowance, bypass it with regeneration or substitute a paid image tool.
+
 ## עבודת וידאו קיימת
 
 - פעולות בעורך הגרסאות משתמשות ב־`edit_operation`: שמירה (`save`), ייצוא (`export`), ביטול (`cancel`) ואישור (`approve`). כולן מתחילות בהצעה עם הגרסה החיה והחתימה שלה. אין להמציא אישורי חיתוך ב־`reviewedFrames`; שינוי חיתוך ישיר מחייב בדיקה חדשה של הלקוח. תוצאה חלקית, לרבות המחשה שהושמטה או כשל בתכנון Motion, דורשת בחירה מפורשת של הלקוח ב־`accept_partial`; אין להסיק אותה מאישור קודם.
