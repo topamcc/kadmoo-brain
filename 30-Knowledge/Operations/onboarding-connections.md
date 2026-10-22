@@ -107,3 +107,5 @@ scope: global
 - בכניסה לדוח מתוך רשימת האתרים נפתח דוח קיים גם אם הריצה נכשלה. רק כשאין אף ריצה, הממשק יכול לפתוח בדיקה ראשונית אחת מוגבלת ללא חיוב; ניסיון חוזר אינו מסלול לעקיפת הרשאות לסריקות נוספות.
 - תמונת התקציב מציגה בנפרד מסגרות קרדיטים לתוכן ומדיה בשקלים, עם ניצול, מתוכנן ויתרה לפי חודש. היתרה היא יתרת מסגרת ולא יתרת ארנק. שימוש לא זמין נשאר לא ידוע; אין להבטיח שנותר תקציב או שלא בוצע שימוש בלי נתון שנמדד.
 - סיכום ביקורת האתר נשען על ממצאים שנשמרו בדוח. אין לשחזר בדיקות תשתית מתוך תקציר הסריקה, להניח מפת אתר חסרה עקב כשל איסוף או לסמן בדיקות שלא תועדו כהצלחה. כשאין תמונת מדידה מפורטת, מציגים את הממצאים הזמינים ומסבירים את המגבלה.
+
+Google ranking views: onboarding, proposals and the audit expose saved domain rankings separately from keyword recommendations. Use the recorded audit snapshot first, then verified ranked research, then legacy saved rankings; show measurement date when known and explain sample coverage. Missing data does not establish that a domain is unranked. Never trigger a paid ranking lookup by opening or refreshing a report. Search and pagination are read-only; private Search Console data is restricted to the authorized workspace.
