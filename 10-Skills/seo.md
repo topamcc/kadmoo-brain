@@ -49,3 +49,7 @@ tool_hints:
 3. מחקר מעמיק: `start_keyword_discovery` / `start_competitor_keyword_discovery` → מעקב ב-`get_user_discovery_sessions`.
 4. לולאת תיקון: `run_site_audit` / `list_seo_recommendations` → תיקון מאמר (`update_article_content` / regenerate) → `submit_url_to_indexing` → `apply_seo_recommendation` או `dismiss`.
 5. GEO: יישם [[geo-protocol]] + [[geo-content-patterns]] ותאם עם [[06-content-studio]]. אשכולות, לא מילים בודדות.
+
+## עבודה עם לוגו מאושר
+
+במאמרים משתמשים בשם העסק ובעובדות המאושרות מתיק המותג. תמלול הלוגו משמש לזיהוי חזותי ולבריף תמונת המאמר. אי־אפשר להסיק ממנו לבדו מספר לפניות, פריסה ארצית או הבטחה מסחרית. אם הלוגו מופיע בתמונת המאמר, מוסרים את הקובץ שנבחר עם תיאורו ומוודאים התאמה. [[ai-image-prompting]]
