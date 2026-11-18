@@ -6,6 +6,22 @@ domain: creative
 when_to_use: "פרומפט לתמונת מודעה או נכס סטודיו"
 scope: global
 department: creative
+customer_brief:
+  audience: customers
+  he:
+    inputs:
+      - "מה מטרת המודעה, מי הקהל ומה הפעולה הרצויה?"
+      - "אילו תמונות מוצר, לוגו, טקסט מדויק ופורמטים אושרו?"
+    checks:
+      - "בחרו רעיון חזותי אחד והגדירו נושא, סביבה, תאורה וקומפוזיציה לכל יחס מסך."
+      - "בדקו את קריאות הכותרת במובייל ואת צורת הלוגו מול המקור. שמרו על מראה המוצר והשתמשו רק בהבטחות שהעסק אישר."
+  en:
+    inputs:
+      - "What is the objective, who is the audience, and what should they do next?"
+      - "Which product images, logo, exact copy and delivery formats are approved?"
+    checks:
+      - "Choose one visual idea and specify the subject, setting, lighting and composition for each aspect ratio."
+      - "Check headline readability on mobile and compare the logo with the original. Preserve the product appearance and use only substantiated claims."
 ---
 # פרומפט תמונה
 

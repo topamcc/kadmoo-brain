@@ -6,6 +6,22 @@ domain: social
 when_to_use: "סרטון קצר לרשתות או למודעה — הוק, מבנה, כתוביות"
 scope: global
 department: social
+customer_brief:
+  audience: customers
+  he:
+    inputs:
+      - "למי מיועד הסרטון, מה הוא אמור להשיג ובאיזו פלטפורמה יוצג?"
+      - "מה אורך הסרטון ואילו חומרי צילום, קריינות, כתוביות וקריאה לפעולה אושרו?"
+    checks:
+      - "תכננו את רגע הפתיחה ואת המעבר ממנו להדגמה. תנו לכל שוט תפקיד וקצב שמתאים למשך הסרטון."
+      - "בדקו רצף בין השוטים וסיימו בפעולה ברורה. אם התבקשו כתוביות, בדקו סנכרון וקריאות בטלפון."
+  en:
+    inputs:
+      - "Who is the video for, what should it achieve and where will it run?"
+      - "What duration, footage, voice-over, captions and call to action are approved?"
+    checks:
+      - "Plan the opening moment and its transition into the demonstration. Give each shot a purpose and pace it for the requested duration."
+      - "Check continuity across shots and finish with a clear action. If captions were requested, check timing and mobile readability."
 ---
 
 # וידאו קצר
