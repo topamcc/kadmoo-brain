@@ -6,6 +6,22 @@ domain: seo
 when_to_use: "כתיבה או תיקון מאמר ל-GEO — בלוקי תשובה, FAQ, טבלאות"
 scope: global
 department: seo-geo
+customer_brief:
+  audience: customers
+  he:
+    inputs:
+      - "לאיזו שאלה של הקורא צריך לענות, למי נכתב המאמר ובאיזו שפה?"
+      - "אילו עובדות על העסק, מקורות ומונחים מקצועיים אושרו?"
+    checks:
+      - "פתחו בתשובה ישירה וארגנו את הסעיפים סביב שאלות המשך. הוסיפו טבלה או שלבים כשזה מקל על ההחלטה של הקורא."
+      - "אמתו כל נתון מספרי מול מקור מזוהה ובדקו שהדוגמאות והמונחים מתאימים לעסק."
+  en:
+    inputs:
+      - "Which reader question should the article answer, who is the audience, and in which language?"
+      - "Which business facts, sources and specialist terms have been approved?"
+    checks:
+      - "Open with a direct answer and organize sections around follow-up questions. Use a comparison table or steps when they help the reader decide."
+      - "Verify numerical claims against an identifiable source and check that examples and terminology fit the business."
 ---
 
 # תבניות תוכן ל-GEO
