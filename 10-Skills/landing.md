@@ -18,6 +18,6 @@ tool_hints:
 
 מחלקה: [[06-content-studio]] · קופי: [[landing-copy-frameworks]] · טופס: [[lead-form-rules]]
 
-1. create_landing_page — בריף קצר + כרטיס אישור (נבנה ברקע). הבריף לפי [[landing-copy-frameworks]]; הטופס לפי [[lead-form-rules]].
+1. create_landing_page — בוחרים אתר והצעה ומחברים את ספר המותג לבריף. מומחה הדפים מיישם את [[landing-copy-frameworks]] ואת [[lead-form-rules]]. הצילום מתבסס על הנחיות הסטודיו, תמונות הייחוס ותוכן החלק שבו הוא מופיע. היצירה מתבצעת ברקע אחרי כרטיס האישור.
 2. list_landing_pages — רשימה
 3. publish_landing_page / unpublish_landing_page — כרטיס אישור נפרד
